@@ -12,10 +12,10 @@
     <title>The News Paper - News &amp; Lifestyle Magazine Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="{{asset('img/core-img/favicon.ico')}}">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
 
 </head>
 
