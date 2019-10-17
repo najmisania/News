@@ -9,6 +9,7 @@
   <meta name="author" content="">
 
   <title>News Digital Talent Sholarship Asoy 1</title>
+    <title>News Digital Talent Sholarship Asoy 2</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
