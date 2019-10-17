@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/about', 'About@buka_about' );
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
