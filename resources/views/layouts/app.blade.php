@@ -17,7 +17,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">    
+    <link rel="stylesheet" href="{{asset('css/linearicons.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{asset('css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
 </head>
 <body>
     <div id="app">
