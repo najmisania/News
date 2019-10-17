@@ -1,948 +1,685 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>The News Paper - News &amp; Lifestyle Magazine Template</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="{{asset('img/core-img/favicon.ico')}}">
-
-    <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="{{asset('style.css')}}">
-
-</head>
-
-<body>
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-
-        <!-- Top Header Area -->
-        <div class="top-header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="top-header-content d-flex align-items-center justify-content-between">
-                            <!-- Logo -->
-                            <div class="logo">
-                                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-                            </div>
-
-                            <!-- Login Search Area -->
-                            <div class="login-search-area d-flex align-items-center">
-                                <!-- Login -->
-                                <div class="login d-flex">
-                                  @if (Route::has('login'))
-              <div class="top-right links">
-                  @auth
-                      <a href="{{ url('/home') }}">Home</a>
-                  @else
-                      <a href="{{ route('login') }}">Login</a>
-
-                      @if (Route::has('register'))
-                          <a href="{{ route('register') }}">Register</a>
-                      @endif
-                  @endauth
-              </div>
-          @endif
-                                </div>
-                                <!-- Search Form -->
-                                <div class="search-form">
-                                    <form action="#" method="post">
-                                        <input type="search" name="search" class="form-control" placeholder="Search">
-                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navbar Area -->
-        <div class="newspaper-main-menu" id="stickyMenu">
-            <div class="classy-nav-container breakpoint-off">
+@include('navbar.head')
+    <body>
+        <header>
+            
+            <div class="header-top">
                 <div class="container">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="newspaperNav">
-
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                            <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+                            <a href="/">
+                                <img class="img-fluid" src="{{asset('img/logo.png')}}" alt="">
+                            </a>
                         </div>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="catagories-post.html">Catagories</a></li>
-                                            <li><a href="single-post.html">Single Articles</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="catagories-post.html">Catagories</a></li>
-                                                    <li><a href="single-post.html">Single Articles</a></li>
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagories</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="catagories-post.html">Catagories</a></li>
-                                                <li><a href="single-post.html">Single Articles</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagories</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="catagories-post.html">Catagories</a></li>
-                                                <li><a href="single-post.html">Single Articles</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagories</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="catagories-post.html">Catagories</a></li>
-                                                <li><a href="single-post.html">Single Articles</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                            <div class="single-mega cn-col-4">
-                                                <!-- Single Featured Post -->
-                                                <div class="single-blog-post small-featured-post d-flex">
-                                                    <div class="post-thumb">
-                                                        <a href="#"><img src="img/bg-img/23.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="post-data">
-                                                        <a href="#" class="post-catagory">Travel</a>
-                                                        <div class="post-meta">
-                                                            <a href="#" class="post-title">
-                                                                <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
-                                                            </a>
-                                                            <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Single Featured Post -->
-                                                <div class="single-blog-post small-featured-post d-flex">
-                                                    <div class="post-thumb">
-                                                        <a href="#"><img src="img/bg-img/24.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="post-data">
-                                                        <a href="#" class="post-catagory">Politics</a>
-                                                        <div class="post-meta">
-                                                            <a href="#" class="post-title">
-                                                                <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
-                                                            </a>
-                                                            <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="#">Politics</a></li>
-                                    <li><a href="#">Breaking News</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Health</a></li>
-                                    <li><a href="#">Travel</a></li>
-                                    <li><a href="#">Sports</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Hero Area Start ##### -->
-    <div class="hero-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-8">
-                    <!-- Breaking News Widget -->
-                    <div class="breaking-news-area d-flex align-items-center">
-                        <div class="news-title">
-                            <p>Breaking News</p>
-                        </div>
-                        <div id="breakingNewsTicker" class="ticker">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
                             <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Breaking News Widget -->
-                    <div class="breaking-news-area d-flex align-items-center mt-15">
-                        <div class="news-title title2">
-                            <p>International</p>
-                        </div>
-                        <div id="internationalTicker" class="ticker">
-                            <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
+                                <li><a href="{{route('login')}}"><span class="lnr lnr-phone-user"></span><span>Login</span></a></li>
+                                <li><a href="{{route('register')}}"><span class="lnr lnr-envelope"></span><span>Register</span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-                <!-- Hero Add -->
-                <div class="col-12 col-lg-4">
-                    <div class="hero-add">
-                        <a href="#"><img src="img/bg-img/hero-add.gif" alt=""></a>
-                    </div>
+            </div>
+            <div class="logo-wrap">
+                <div class="container">
+                    
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- ##### Hero Area End ##### -->
-
-    <!-- ##### Featured Post Area Start ##### -->
-    <div class="featured-post-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-8">
-                    <div class="row">
-
-                        <!-- Single Featured Post -->
-                        <div class="col-12 col-lg-7">
-                            <div class="single-blog-post featured-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/16.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <a href="#" class="post-title">
-                                        <h6>Financial news: A new company is born today at the stock market</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <p class="post-author">By <a href="#">Christinne Williams</a></p>
-                                        <p class="post-excerp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac leo fermentum, eu cursus nunc maximus. Integer convallis nisi nibh, et ornare neque ullamcorper ac. Nam id congue lectus, a venenatis massa. Maecenas justo libero, vulputate vel nunc id, blandit feugiat sem. </p>
-                                        <!-- Post Like & Post Comment -->
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-5">
-                            <!-- Single Featured Post -->
-                            <div class="single-blog-post featured-post-2">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/17.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <div class="post-meta">
-                                        <a href="#" class="post-title">
-                                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac...</h6>
-                                        </a>
-                                        <!-- Post Like & Post Comment -->
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Featured Post -->
-                            <div class="single-blog-post featured-post-2">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/18.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <div class="post-meta">
-                                        <a href="#" class="post-title">
-                                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac...</h6>
-                                        </a>
-                                        <!-- Post Like & Post Comment -->
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Single Featured Post -->
-                    <div class="single-blog-post small-featured-post d-flex">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/19.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-catagory">Finance</a>
-                            <div class="post-meta">
-                                <a href="#" class="post-title">
-                                    <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
-                                </a>
-                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Featured Post -->
-                    <div class="single-blog-post small-featured-post d-flex">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/20.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-catagory">Politics</a>
-                            <div class="post-meta">
-                                <a href="#" class="post-title">
-                                    <h6>Sed a elit euismod augue semper congue sit amet ac sapien.</h6>
-                                </a>
-                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Featured Post -->
-                    <div class="single-blog-post small-featured-post d-flex">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/21.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-catagory">Health</a>
-                            <div class="post-meta">
-                                <a href="#" class="post-title">
-                                    <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
-                                </a>
-                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Featured Post -->
-                    <div class="single-blog-post small-featured-post d-flex">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/22.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-catagory">Finance</a>
-                            <div class="post-meta">
-                                <a href="#" class="post-title">
-                                    <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
-                                </a>
-                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Featured Post -->
-                    <div class="single-blog-post small-featured-post d-flex">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/23.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-catagory">Travel</a>
-                            <div class="post-meta">
-                                <a href="#" class="post-title">
-                                    <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
-                                </a>
-                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Featured Post -->
-                    <div class="single-blog-post small-featured-post d-flex">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/24.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-catagory">Politics</a>
-                            <div class="post-meta">
-                                <a href="#" class="post-title">
-                                    <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
-                                </a>
-                                <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Featured Post Area End ##### -->
-
-    <!-- ##### Popular News Area Start ##### -->
-    <div class="popular-news-area section-padding-80-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <div class="section-heading">
-                        <h6>Popular News</h6>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-blog-post style-3">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/12.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <a href="#" class="post-title">
-                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
-                                    </a>
-                                    <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-blog-post style-3">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/13.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <a href="#" class="post-title">
-                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
-                                    </a>
-                                    <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-blog-post style-3">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/14.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <a href="#" class="post-title">
-                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
-                                    </a>
-                                    <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-blog-post style-3">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/15.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-catagory">Finance</a>
-                                    <a href="#" class="post-title">
-                                        <h6>Dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
-                                    </a>
-                                    <div class="post-meta d-flex align-items-center">
-                                        <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                        <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-4">
-                    <div class="section-heading">
-                        <h6>Info</h6>
-                    </div>
-                    <!-- Popular News Widget -->
-                    <div class="popular-news-widget mb-30">
-                        <h3>4 Most Popular News</h3>
-
-                        <!-- Single Popular Blog -->
-                        <div class="single-popular-post">
-                            <a href="#">
-                                <h6><span>1.</span> Amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales.</h6>
-                            </a>
-                            <p>April 14, 2018</p>
-                        </div>
-
-                        <!-- Single Popular Blog -->
-                        <div class="single-popular-post">
-                            <a href="#">
-                                <h6><span>2.</span> Consectetur adipiscing elit. Nam eu metus sit amet odio sodales placer.</h6>
-                            </a>
-                            <p>April 14, 2018</p>
-                        </div>
-
-                        <!-- Single Popular Blog -->
-                        <div class="single-popular-post">
-                            <a href="#">
-                                <h6><span>3.</span> Adipiscing elit. Nam eu metus sit amet odio sodales placer. Sed varius leo.</h6>
-                            </a>
-                            <p>April 14, 2018</p>
-                        </div>
-
-                        <!-- Single Popular Blog -->
-                        <div class="single-popular-post">
-                            <a href="#">
-                                <h6><span>4.</span> Eu metus sit amet odio sodales placer. Sed varius leo ac...</h6>
-                            </a>
-                            <p>April 14, 2018</p>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter Widget -->
-                    <div class="newsletter-widget">
-                        <h4>Newsletter</h4>
-                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                        <form action="#" method="post">
-                            <input type="text" name="text" placeholder="Name">
-                            <input type="email" name="email" placeholder="Email">
-                            <button type="submit" class="btn w-100">Subscribe</button>
+            <div class="container main-menu" id="main-menu">
+                <div class="row align-items-center justify-content-between">
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li class="menu-active"><a href="index.html">Home</a></li>
+                            <li><a href="archive.html">Archive</a></li>
+                            <li class="menu-has-children"><a href="">Category</a></li>
+                            <li><a href="">Upload News</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    </nav><!-- #nav-menu-container -->
+                    <div class="navbar-right">
+                        <form class="Search">
+                            <input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
+                            <label for="Search-box" class="Search-box-label">
+                                <span class="lnr lnr-magnifier"></span>
+                            </label>
+                            <span class="Search-close">
+                                <span class="lnr lnr-cross"></span>
+                            </span>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- ##### Popular News Area End ##### -->
-
-    <!-- ##### Video Post Area Start ##### -->
-    <div class="video-post-area bg-img bg-overlay" style="background-image: url(img/bg-img/bg1.jpg);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Single Video Post -->
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single-video-post">
-                        <img src="img/bg-img/video1.jpg" alt="">
-                        <!-- Video Button -->
-                        <div class="videobtn">
-                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
+        </header>
+        
+        <div class="site-main-container">
+            <!-- Start top-post Area -->
+            <section class="top-post-area pt-10">
+                <div class="container no-padding">
+                    <div class="row small-gutters">
+                        <div class="col-lg-8 top-post-left">
+                            <div class="feature-image-thumb relative">
+                                <div class="overlay overlay-bg"></div>
+                                <img class="img-fluid" src="{{asset('img/top-post1.jpg')}}" alt="">
+                            </div>
+                            <div class="top-post-details">
+                                <ul class="tags">
+                                    <li><a href="#">Food Habit</a></li>
+                                </ul>
+                                <a href="image-post.html">
+                                    <h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
+                                </a>
+                                <ul class="meta">
+                                    <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                    <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                    <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 top-post-right">
+                            <div class="single-top-post">
+                                <div class="feature-image-thumb relative">
+                                    <div class="overlay overlay-bg"></div>
+                                    <img class="img-fluid" src="{{asset('img/top-post2.jpg')}}" alt="">
+                                </div>
+                                <div class="top-post-details">
+                                    <ul class="tags">
+                                        <li><a href="#">Food Habit</a></li>
+                                    </ul>
+                                    <a href="image-post.html">
+                                        <h4>A Discount Toner Cartridge Is Better Than Ever.</h4>
+                                    </a>
+                                    <ul class="meta">
+                                        <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single-top-post mt-10">
+                                <div class="feature-image-thumb relative">
+                                    <div class="overlay overlay-bg"></div>
+                                    <img class="img-fluid" src="{{asset('img/top-post3.jpg')}}" alt="">
+                                </div>
+                                <div class="top-post-details">
+                                    <ul class="tags">
+                                        <li><a href="#">Food Habit</a></li>
+                                    </ul>
+                                    <a href="image-post.html">
+                                        <h4>A Discount Toner Cartridge Is Better</h4>
+                                    </a>
+                                    <ul class="meta">
+                                        <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="news-tracker-wrap">
+                                <h6><span>Breaking News:</span>   <a href="#">Astronomy Binoculars A Great Alternative</a></h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Single Video Post -->
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single-video-post">
-                        <img src="img/bg-img/video2.jpg" alt="">
-                        <!-- Video Button -->
-                        <div class="videobtn">
-                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Video Post -->
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="single-video-post">
-                        <img src="img/bg-img/video3.jpg" alt="">
-                        <!-- Video Button -->
-                        <div class="videobtn">
-                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Video Post Area End ##### -->
-
-    <!-- ##### Editorial Post Area Start ##### -->
-    <div class="editors-pick-post-area section-padding-80-50">
-        <div class="container">
-            <div class="row">
-                <!-- Editors Pick -->
-                <div class="col-12 col-md-7 col-lg-9">
-                    <div class="section-heading">
-                        <h6>Editor’s Pick</h6>
-                    </div>
-
+            </section>
+            <!-- End top-post Area -->
+            <!-- Start latest-post Area -->
+            <section class="latest-post-area pb-120">
+                <div class="container no-padding">
                     <div class="row">
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-lg-4">
-                            <div class="single-blog-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/1.jpg" alt=""></a>
+                        <div class="col-lg-8 post-list">
+                            <!-- Start latest-post Area -->
+                            <div class="latest-post-wrap">
+                                <h4 class="cat-title">Latest News</h4>
+                                <div class="single-latest-post row align-items-center">
+                                    <div class="col-lg-5 post-left">
+                                        <div class="feature-img relative">
+                                            <div class="overlay overlay-bg"></div>
+                                            <img class="img-fluid" src="{{asset('img/l1.jpg')}}" alt="">
+                                        </div>
+                                        <ul class="tags">
+                                            <li><a href="#">Lifestyle</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-7 post-right">
+                                        <a href="image-post.html">
+                                            <h4>A Discount Toner Cartridge Is
+                                            Better Than Ever.</h4>
+                                        </a>
+                                        <ul class="meta">
+                                            <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                            <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                            <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                        </ul>
+                                        <p class="excert">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-title">
-                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                <div class="single-latest-post row align-items-center">
+                                    <div class="col-lg-5 post-left">
+                                        <div class="feature-img relative">
+                                            <div class="overlay overlay-bg"></div>
+                                            <img class="img-fluid" src="{{asset('img/l2.jpg')}}" alt="">
+                                        </div>
+                                        <ul class="tags">
+                                            <li><a href="#">Science</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-7 post-right">
+                                        <a href="image-post.html">
+                                            <h4>A Discount Toner Cartridge Is
+                                            Better Than Ever.</h4>
+                                        </a>
+                                        <ul class="meta">
+                                            <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                            <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                            <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                        </ul>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-latest-post row align-items-center">
+                                    <div class="col-lg-5 post-left">
+                                        <div class="feature-img relative">
+                                            <div class="overlay overlay-bg"></div>
+                                            <img class="img-fluid" src="{{asset('img/l3.jpg')}}" alt="">
+                                        </div>
+                                        <ul class="tags">
+                                            <li><a href="#">Travel</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-7 post-right">
+                                        <a href="image-post.html">
+                                            <h4>A Discount Toner Cartridge Is
+                                            Better Than Ever.</h4>
+                                        </a>
+                                        <ul class="meta">
+                                            <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                            <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                            <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                        </ul>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="single-latest-post row align-items-center">
+                                    <div class="col-lg-5 post-left">
+                                        <div class="feature-img relative">
+                                            <div class="overlay overlay-bg"></div>
+                                            <img class="img-fluid" src="{{asset('img/l4.jpg')}}" alt="">
+                                        </div>
+                                        <ul class="tags">
+                                            <li><a href="#">Fashion</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-7 post-right">
+                                        <a href="image-post.html">
+                                            <h4>A Discount Toner Cartridge Is
+                                            Better Than Ever.</h4>
+                                        </a>
+                                        <ul class="meta">
+                                            <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                            <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                            <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                        </ul>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-lg-4">
-                            <div class="single-blog-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/2.jpg" alt=""></a>
+                            <!-- End latest-post Area -->
+                            
+                            <!-- Start banner-ads Area -->
+                            <div class="col-lg-12 ad-widget-wrap mt-30 mb-30">
+                                <img class="img-fluid" src="{{asset('img/banner-ad.jpg')}}" alt="">
+                            </div>
+                            <!-- End banner-ads Area -->
+                            <!-- Start popular-post Area -->
+                            <div class="popular-post-wrap">
+                                <h4 class="title">Popular Posts</h4>
+                                <div class="feature-post relative">
+                                    <div class="feature-img relative">
+                                        <div class="overlay overlay-bg"></div>
+                                        <img class="img-fluid" src="{{asset('img/f1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <ul class="tags">
+                                            <li><a href="#">Food Habit</a></li>
+                                        </ul>
+                                        <a href="image-post.html">
+                                            <h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
+                                        </a>
+                                        <ul class="meta">
+                                            <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                            <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                            <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-title">
-                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                <div class="row mt-20 medium-gutters">
+                                    <div class="col-lg-6 single-popular-post">
+                                        <div class="feature-img-wrap relative">
+                                            <div class="feature-img relative">
+                                                <div class="overlay overlay-bg"></div>
+                                                <img class="img-fluid" src="img/f2.jpg" alt="">
+                                            </div>
+                                            <ul class="tags">
+                                                <li><a href="#">Travel</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h4>A Discount Toner Cartridge Is
+                                                Better Than Ever.</h4>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
+                                            </ul>
+                                            <p class="excert">
+                                                Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 single-popular-post">
+                                        <div class="feature-img-wrap relative">
+                                            <div class="feature-img relative">
+                                                <div class="overlay overlay-bg"></div>
+                                                <img class="img-fluid" src="{{asset('img/f3.jpg')}}" alt="">
+                                            </div>
+                                            <ul class="tags">
+                                                <li><a href="#">Travel</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h4>A Discount Toner Cartridge Is
+                                                Better Than Ever.</h4>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
+                                            </ul>
+                                            <p class="excert">
+                                                Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-lg-4">
-                            <div class="single-blog-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/3.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-title">
-                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                            <!-- End popular-post Area -->
+                            <!-- Start relavent-story-post Area -->
+                            <div class="relavent-story-post-wrap mt-30">
+                                <h4 class="title">Relavent Stories</h4>
+                                <div class="relavent-story-list-wrap">
+                                    <div class="single-relavent-post row align-items-center">
+                                        <div class="col-lg-5 post-left">
+                                            <div class="feature-img relative">
+                                                <div class="overlay overlay-bg"></div>
+                                                <img class="img-fluid" src="{{asset('img/r1.jpg')}}" alt="">
+                                            </div>
+                                            <ul class="tags">
+                                                <li><a href="#">Lifestyle</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7 post-right">
+                                            <a href="image-post.html">
+                                                <h4>A Discount Toner Cartridge Is
+                                                Better Than Ever.</h4>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                            </ul>
+                                            <p class="excert">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="single-relavent-post row align-items-center">
+                                        <div class="col-lg-5 post-left">
+                                            <div class="feature-img relative">
+                                                <div class="overlay overlay-bg"></div>
+                                                <img class="img-fluid" src="{{asset('img/r2.jpg')}}" alt="">
+                                            </div>
+                                            <ul class="tags">
+                                                <li><a href="#">Science</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7 post-right">
+                                            <a href="image-post.html">
+                                                <h4>A Discount Toner Cartridge Is
+                                                Better Than Ever.</h4>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                            </ul>
+                                            <p class="excert">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="single-relavent-post row align-items-center">
+                                        <div class="col-lg-5 post-left">
+                                            <div class="feature-img relative">
+                                                <div class="overlay overlay-bg"></div>
+                                                <img class="img-fluid" src="{{asset('img/r3.jpg')}}" alt="">
+                                            </div>
+                                            <ul class="tags">
+                                                <li><a href="#">Travel</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7 post-right">
+                                            <a href="image-post.html">
+                                                <h4>A Discount Toner Cartridge Is
+                                                Better Than Ever.</h4>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                            </ul>
+                                            <p class="excert">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- End relavent-story-post Area -->
                         </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-lg-4">
-                            <div class="single-blog-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/4.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-title">
-                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                        <div class="col-lg-4">
+                            <div class="sidebars-area">
+                                <div class="single-sidebar-widget editors-pick-widget">
+                                    <h6 class="title">Editor’s Pick</h6>
+                                    <div class="editors-pick-post">
+                                        <div class="feature-img-wrap relative">
+                                            <div class="feature-img relative">
+                                                <div class="overlay overlay-bg"></div>
+                                                <img class="img-fluid" src="{{asset('img/e1.jpg')}}" alt="">
+                                            </div>
+                                            <ul class="tags">
+                                                <li><a href="#">Travel</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h4 class="mt-20">A Discount Toner Cartridge Is
+                                                Better Than Ever.</h4>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
+                                            </ul>
+                                            <p class="excert">
+                                                Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
+                                            </p>
+                                        </div>
+                                        <div class="post-lists">
+                                            <div class="single-post d-flex flex-row">
+                                                <div class="thumb">
+                                                    <img src="img/e2.jpg" alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <a href="image-post.html"><h6>Help Finding Information
+                                                    Online is so easy</h6></a>
+                                                    <ul class="meta">
+                                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="single-post d-flex flex-row">
+                                                <div class="thumb">
+                                                    <img src="{{asset('img/e3.jpg')}}" alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <a href="image-post.html"><h6>Compatible Inkjet Cartr
+                                                    world famous</h6></a>
+                                                    <ul class="meta">
+                                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="single-post d-flex flex-row">
+                                                <div class="thumb">
+                                                    <img src="{{asset('img/e4.jpg')}}" alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <a href="image-post.html"><h6>5 Tips For Offshore Soft
+                                                    Development </h6></a>
+                                                    <ul class="meta">
+                                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-lg-4">
-                            <div class="single-blog-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/5.jpg" alt=""></a>
+                                <div class="single-sidebar-widget ads-widget">
+                                    <img class="img-fluid" src="{{asset('img/sidebar-ads.jpg')}}" alt="">
                                 </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-title">
-                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
+                                <div class="single-sidebar-widget newsletter-widget">
+                                    <h6 class="title">Newsletter</h6>
+                                    <p>
+                                        Here, I focus on a range of items
+                                        andfeatures that we use in life without
+                                        giving them a second thought.
+                                    </p>
+                                    <div class="form-group d-flex flex-row">
+                                        <div class="col-autos">
+                                            <div class="input-group">
+                                                <input class="form-control" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="text">
+                                            </div>
+                                        </div>
+                                        <a href="#" class="bbtns">Subcribe</a>
+                                    </div>
+                                    <p>
+                                        You can unsubscribe us at any time
+                                    </p>
+                                </div>
+                                <div class="single-sidebar-widget most-popular-widget">
+                                    <h6 class="title">Most Popular</h6>
+                                    <div class="single-list flex-row d-flex">
+                                        <div class="thumb">
+                                            <img src="{{asset('img/m1.jpg')}}" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h6>Help Finding Information
+                                                Online is so easy</h6>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-list flex-row d-flex">
+                                        <div class="thumb">
+                                            <img src="{{asset('img/m2.jpg')}}" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h6>Compatible Inkjet Cartr
+                                                world famous</h6>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-list flex-row d-flex">
+                                        <div class="thumb">
+                                            <img src="{{asset('img/m3.jpg')}}" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h6>5 Tips For Offshore Soft
+                                                Development </h6>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-list flex-row d-flex">
+                                        <div class="thumb">
+                                            <img src="{{asset('img/m4.jpg')}}" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <a href="image-post.html">
+                                                <h6>5 Tips For Offshore Soft
+                                                Development </h6>
+                                            </a>
+                                            <ul class="meta">
+                                                <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+                                                <li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12 col-lg-4">
-                            <div class="single-blog-post">
-                                <div class="post-thumb">
-                                    <a href="#"><img src="img/bg-img/6.jpg" alt=""></a>
-                                </div>
-                                <div class="post-data">
-                                    <a href="#" class="post-title">
-                                        <h6>Orci varius natoque penatibus et magnis dis parturient montes.</h6>
-                                    </a>
-                                    <div class="post-meta">
-                                        <div class="post-date"><a href="#">February 11, 2018</a></div>
-                                    </div>
+                                <div class="single-sidebar-widget social-network-widget">
+                                    <h6 class="title">Social Networks</h6>
+                                    <ul class="social-list">
+                                        <li class="d-flex justify-content-between align-items-center fb">
+                                            <div class="icons d-flex flex-row align-items-center">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                <p>983 Likes</p>
+                                            </div>
+                                            <a href="#">Like our page</a>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center tw">
+                                            <div class="icons d-flex flex-row align-items-center">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                <p>983 Followers</p>
+                                            </div>
+                                            <a href="#">Follow Us</a>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center yt">
+                                            <div class="icons d-flex flex-row align-items-center">
+                                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                                <p>983 Subscriber</p>
+                                            </div>
+                                            <a href="#">Subscribe</a>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center rs">
+                                            <div class="icons d-flex flex-row align-items-center">
+                                                <i class="fa fa-rss" aria-hidden="true"></i>
+                                                <p>983 Subscribe</p>
+                                            </div>
+                                            <a href="#">Subscribe</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- World News -->
-                <div class="col-12 col-md-5 col-lg-3">
-                    <div class="section-heading">
-                        <h6>World News</h6>
-                    </div>
-
-                    <!-- Single Post -->
-                    <div class="single-blog-post style-2">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/7.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-title">
-                                <h6>Orci varius natoque penatibus et magnis</h6>
-                            </a>
-                            <div class="post-meta">
-                                <div class="post-date"><a href="#">February 11, 2018</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post -->
-                    <div class="single-blog-post style-2">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/8.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-title">
-                                <h6>Orci varius natoque penatibus et magnis</h6>
-                            </a>
-                            <div class="post-meta">
-                                <div class="post-date"><a href="#">February 11, 2018</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post -->
-                    <div class="single-blog-post style-2">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/9.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-title">
-                                <h6>Orci varius natoque penatibus et magnis</h6>
-                            </a>
-                            <div class="post-meta">
-                                <div class="post-date"><a href="#">February 11, 2018</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post -->
-                    <div class="single-blog-post style-2">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/10.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-title">
-                                <h6>Orci varius natoque penatibus et magnis</h6>
-                            </a>
-                            <div class="post-meta">
-                                <div class="post-date"><a href="#">February 11, 2018</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post -->
-                    <div class="single-blog-post style-2">
-                        <div class="post-thumb">
-                            <a href="#"><img src="img/bg-img/11.jpg" alt=""></a>
-                        </div>
-                        <div class="post-data">
-                            <a href="#" class="post-title">
-                                <h6>Orci varius natoque penatibus et magnis</h6>
-                            </a>
-                            <div class="post-meta">
-                                <div class="post-date"><a href="#">February 11, 2018</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            </section>
+            <!-- End latest-post Area -->
         </div>
-    </div>
-    <!-- ##### Editorial Post Area End ##### -->
-
-    <!-- ##### Footer Add Area Start ##### -->
-    <div class="footer-add-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-add">
-                        <a href="#"><img src="img/bg-img/footer-add.gif" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Footer Add Area End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
+        
+        <!-- start footer Area -->
+        <footer class="footer-area section-gap">
             <div class="container">
                 <div class="row">
-
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="footer-widget-area mt-80">
-                            <!-- Footer Logo -->
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-                            </div>
-                            <!-- List -->
-                            <ul class="list">
-                                <li><a href="mailto:contact@youremail.com">contact@youremail.com</a></li>
-                                <li><a href="tel:+4352782883884">+43 5278 2883 884</a></li>
-                                <li><a href="http://yoursitename.com">www.yoursitename.com</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-3 col-md-6 single-footer-widget">
+                        <h4>Top Products</h4>
+                        <ul>
+                            <li><a href="#">Managed Website</a></li>
+                            <li><a href="#">Manage Reputation</a></li>
+                            <li><a href="#">Power Tools</a></li>
+                            <li><a href="#">Marketing Service</a></li>
+                        </ul>
                     </div>
-
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-2">
-                        <div class="footer-widget-area mt-80">
-                            <!-- Title -->
-                            <h4 class="widget-title">Politics</h4>
-                            <!-- List -->
-                            <ul class="list">
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">Markets</a></li>
-                                <li><a href="#">Tech</a></li>
-                                <li><a href="#">Luxury</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Brand Assets</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
                     </div>
-
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-4 col-lg-2">
-                        <div class="footer-widget-area mt-80">
-                            <!-- Title -->
-                            <h4 class="widget-title">Featured</h4>
-                            <!-- List -->
-                            <ul class="list">
-                                <li><a href="#">Football</a></li>
-                                <li><a href="#">Golf</a></li>
-                                <li><a href="#">Tennis</a></li>
-                                <li><a href="#">Motorsport</a></li>
-                                <li><a href="#">Horseracing</a></li>
-                                <li><a href="#">Equestrian</a></li>
-                                <li><a href="#">Sailing</a></li>
-                                <li><a href="#">Skiing</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+                        <h4>Features</h4>
+                        <ul>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Brand Assets</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
                     </div>
-
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-4 col-lg-2">
-                        <div class="footer-widget-area mt-80">
-                            <!-- Title -->
-                            <h4 class="widget-title">FAQ</h4>
-                            <!-- List -->
-                            <ul class="list">
-                                <li><a href="#">Aviation</a></li>
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">Traveller</a></li>
-                                <li><a href="#">Destinations</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Food/Drink</a></li>
-                                <li><a href="#">Hotels</a></li>
-                                <li><a href="#">Partner Hotels</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-2 col-md-6 single-footer-widget">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Experts</a></li>
+                            <li><a href="#">Agencies</a></li>
+                        </ul>
                     </div>
-
-                    <!-- Footer Widget Area -->
-                    <div class="col-12 col-sm-4 col-lg-2">
-                        <div class="footer-widget-area mt-80">
-                            <!-- Title -->
-                            <h4 class="widget-title">+More</h4>
-                            <!-- List -->
-                            <ul class="list">
-                                <li><a href="#">Fashion</a></li>
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Architecture</a></li>
-                                <li><a href="#">Arts</a></li>
-                                <li><a href="#">Autos</a></li>
-                                <li><a href="#">Luxury</a></li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-3 col-md-6 single-footer-widget">
+                        <h4>Instragram Feed</h4>
+                        <ul class="instafeed d-flex flex-wrap">
+                            <li><img src="{{asset('img/i1.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i2.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i3.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i4.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i5.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i6.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i7.jpg')}}" alt=""></li>
+                            <li><img src="{{asset('img/i8.jpg')}}" alt=""></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12">
-                        <!-- Copywrite -->
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="footer-bottom row align-items-center">
+                    <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <div class="col-lg-4 col-md-12 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- ##### Footer Area Start ##### -->
-
-    <!-- ##### All Javascript Files ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-</body>
-
+        </footer>
+        <!-- End footer Area -->
+        <script src="{{asset('js/vendor/jquery-2.2.4.min.js')}}"></script>
+        <script src="{{asset('js/popper.min.js')}}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <script src="{{asset('js/easing.min.js')}}"></script>
+        <script src="{{asset('js/hoverIntent.js')}}"></script>
+        <script src="{{asset('js/superfish.min.js')}}"></script>
+        <script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{asset('js/mn-accordion.js')}}"></script>
+        <script src="{{asset('js/jquery-ui.js')}}"></script>
+        <script src="{{asset('js/jquery.nice-select.min.js')}}"></script>
+        <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('js/mail-script.js')}}"></script>
+        <script src="{{asset('js/main.js')}}"></script>
+    </body>
 </html>
