@@ -3,15 +3,8 @@
     <header>
           <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
                 <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
-                            <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
-                            <a href="/">
-                                <h1 style="color: white;">DTS News</h1>
-                            </a>
-                        </div>
-                      </div>
-                    </div>
+                    <a href="/">
+                    <h1 style="color: white;">DTS News</h1></a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
@@ -40,7 +33,7 @@
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             <li class="menu-active"><a href="index.html">Home</a></li>
-                            <li><a href="\history">Archive</a></li>
+                            <li><a href="\history">History Berita</a></li>
                             <li class="menu-has-children"><a href="">Category</a></li>
                             <li><a href="\upload">Upload News</a></li>
                         <li><a href="about.html">About</a></li>
