@@ -34,7 +34,11 @@
                         <ul class="nav-menu">
                             <li class="menu-active"><a href="index.html">Home</a></li>
                             <li><a href="\history">History Berita</a></li>
-                            <li class="menu-has-children"><a href="">Category</a></li>
+                            <li class="menu-has-children"><a href="">Kategori Berita</a>
+                            <ul>
+                                <li><a href="standard-post.html">DTS</a></li>
+                                <li><a href="image-post.html">NON DTS</a></li>
+                            </ul></li>
                             <li><a href="\upload">Upload News</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
