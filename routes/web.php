@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
 Route::get('/history', function () {
      return view ('history.index');
 });
@@ -27,3 +28,9 @@ Route::get('/history', function () {
 Route::get('/upload', function () {
      return view ('upload.index');
 });
+Route::group(['prefix' => 'admin'], function(){
+	Route::get('/login', 'AuthAdmin\LoginController@showLoginForm')->name('admin.login');
+	Route::post('/login', 'AuthAdmin\LoginController@login')->name('admin.login.submit');
+	Route::get('/', 'AdminController@index')->name('admin.home');
+});
+

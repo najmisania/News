@@ -8,6 +8,8 @@ class About extends Controller
 {
 	public function buka_about()
 	{
-		return view('about');
+		$session_gue_gitu = "YEE_GAK_ADA";
+
+		return view('about')->with('nilai_session', $session_gue_gitu);
 	}
 }

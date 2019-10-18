@@ -1,8 +1,35 @@
 @include('navbar.head')
     <body>
-        <header>         
-
-            @include('navbar.header')
+    <header>
+          <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                            <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+                            <a href="/">
+                                <h1 style="color: white;">DTS News</h1>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                  <a style="color: white;" id="navbarDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre href="{{route('login')}}"><span class="lnr lnr-phone-user"></span><span>Login</span></a>
+                                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="{{ url('/admin') }}">
+                                          {{ __('Admin') }}
+                                      </a>
+                                      <a class="dropdown-item" href="{{ url('/login') }}">
+                                          {{ __('User') }}
+                                      </a>
+                                  </div>
+                                </li>
+                                <li class="nav-item"><a style="color: white;" class="nav-link" href="{{route('register')}}">Register</a></li>
+                            </ul>
+                        </div>
+                </div>
+          </nav>
             <div class="logo-wrap">
                 <div class="container">
 

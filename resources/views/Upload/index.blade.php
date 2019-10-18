@@ -1,5 +1,17 @@
 @include('navbar.head')
-@include('navbar.header')
+                <div class="header-top">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                            <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+                            <a href="/">
+                                <h1 style="color: white;">DTS News</h1>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
 
   <br>
   <br>
@@ -22,11 +34,7 @@
               </div><hr>
               <form class="user" method="POST" action="">
                 <div class="form-group row">
-                  <div class="col-sm-1">
-                  <svg style="width:30px;height:30px" viewBox="0 0 24 24">
-                    <path fill="#989898" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
-                  </svg>
-                </div>
+
                   <div class="col-sm-11">
                     
                   </div>
@@ -57,7 +65,7 @@
                 </div>
                 <div class="text-center section_title">
                 	<select class="form-control">
-                		
+
                       
                         <option value=""></option>
                     
