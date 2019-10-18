@@ -9,13 +9,16 @@
                 </a>
             </div>
             </div>
-            
+
 
         </div>
     </div>
 </div> <br><br><br>
 <div class="container">
     <div class="row justify-content-center">
+      <div class="col-md-4">
+    <img src="{{asset('img/dts.png')}}" alt="" width="300px">
+  </div>
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login Admin') }}</div>

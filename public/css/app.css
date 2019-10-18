@@ -3510,7 +3510,7 @@ input[type=button].btn-block {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #16181b;
+  color: black;
   text-decoration: none;
   background-color: #f8f9fa;
 }
@@ -4404,7 +4404,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: navy;
+  background-color: #3e64ff;
 }
 
 .navbar > .container,

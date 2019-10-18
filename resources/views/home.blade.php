@@ -1,4 +1,5 @@
 @extends('navbar.head')
+<header>
 
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
     <div class="container">
@@ -53,6 +54,7 @@
     </div>
 </nav>
 
+
 <div class="logo-wrap">
     <div class="container">
 
@@ -62,26 +64,32 @@
     <div class="row align-items-center justify-content-between">
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li class="menu-active"><a href="index.html">Home</a></li>
-                <li><a href="\history">History Berita</a></li>
-                <li class="menu-has-children"><a href="">Category</a></li>
-                <li><a href="\upload">Upload News</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+                <li class="menu-active"><a style="color:black;" href="index.html">Home</a></li>
+                <li><a style="color:black;" href="\history">History Berita</a></li>
+                <li class="menu-has-children"><a style="color:black;" href="">Kategori Berita</a>
+                <ul>
+                    <li><a style="color:black;" href="standard-post.html">DTS</a></li>
+                    <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
+                </ul></li>
+                <li><a style="color:black;" href="\upload">Upload News</a></li>
+            <li><a style="color:black;"href="about.html">About</a></li>
+            <li><a style="color:black;"href="contact.html">Contact</a></li>
+          </nav>
+          <div class="navbar-right">
+              <form class="Search">
+                  <input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
+                  <label for="Search-box" class="Search-box-label">
+                      <span class="lnr lnr-magnifier"></span>
+                  </label>
+                  <span class="Search-close">
+                      <span class="lnr lnr-cross"></span>
+                  </span>
+              </form>
+          </div>
         </ul>
-        </nav><!-- #nav-menu-container -->
-        <div class="navbar-right">
-            <form class="Search">
-                <input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
-                <label for="Search-box" class="Search-box-label">
-                    <span class="lnr lnr-magnifier"></span>
-                </label>
-                <span class="Search-close">
-                    <span class="lnr lnr-cross"></span>
-                </span>
-            </form>
-        </div>
+
     </div>
-</div> <br><br><br>
+</div>
+</header> <br><br><br>
 
 @extends('navbar.footer')
