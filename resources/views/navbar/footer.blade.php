@@ -1,5 +1,5 @@
 <!-- start footer Area -->
-<h1 class="text-center">SUPPORT SYSTEM</h1>
+<h3 class="text-center">SUPPORT SYSTEM</h3>
 <footer class="footer-area section-gap">
     <div class="container">
 

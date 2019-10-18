@@ -19,3 +19,11 @@ Route::get('/about', 'About@buka_about' );
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/history', function () {
+     return view ('history.index');
+});
+
+Route::get('/upload', function () {
+     return view ('upload.index');
+});
