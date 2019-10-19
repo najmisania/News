@@ -39,7 +39,7 @@
           </nav>
             <div class="logo-wrap">
                 <div class="container">
-
+                    <marquee>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional.</marquee>
                 </div>
             </div>
             <div class="container main-menu" id="main-menu">
