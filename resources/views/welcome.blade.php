@@ -660,6 +660,8 @@
                         </div>
                     </div>
                 </div>
+              </div>
+          </div></div>
             </section>
             <!-- End latest-post Area -->
 @include('navbar.footer')
