@@ -1,4 +1,18 @@
 @include('navbar.head')
+<style media="screen">
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px;
+  }
+}
+</style>
     <body>
     <header>
           <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
