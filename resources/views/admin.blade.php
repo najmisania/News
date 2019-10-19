@@ -1,4 +1,4 @@
-@extends('navbar.head')
+@include('navbar.head')
 <style media="screen">
 @media (min-width: 992px) {
   .modal-lg,
