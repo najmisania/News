@@ -93,3 +93,4 @@
 </header> <br><br><br>
 
 @extends('navbar.footer')
+@extends('navbar.script')

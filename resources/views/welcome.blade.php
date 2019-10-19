@@ -604,3 +604,4 @@
             </section>
             <!-- End latest-post Area -->
 @include('navbar.footer')
+@include('navbar.script')

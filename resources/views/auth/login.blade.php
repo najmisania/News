@@ -88,3 +88,4 @@
 </div> <br><br><br>
 
 @extends('navbar.footer')
+@include('navbar.script')

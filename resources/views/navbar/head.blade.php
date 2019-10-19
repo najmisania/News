@@ -28,4 +28,6 @@
         <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
+        
+
     </head>
