@@ -98,7 +98,7 @@
 
   <!-- Modal Header -->
   <div class="modal-header">
-    <h4 class="modal-title">About</h4>
+    <h4 class="modal-title">Contact</h4>
     <button type="button" class="close" data-dismiss="modal">&times;</button>
   </div>
 
