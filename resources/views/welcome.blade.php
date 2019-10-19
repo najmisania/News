@@ -40,8 +40,8 @@
                                 <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
                             </ul></li>
                             <li><a style="color:black;" href="\upload">Upload News</a></li>
-                        <li><a style="color:black;"href="about.html">About</a></li>
-                        <li><a style="color:black;"href="contact.html">Contact</a></li>
+                            <li><a style="color:black;" data-toggle="modal" data-target="#myModal">About</a></li>
+                            <li><a style="color:black;" data-toggle="modal" data-target="#myModal1">Contact</a></li>
                       </nav>
                       <div class="navbar-right">
                           <form class="Search">
@@ -57,6 +57,68 @@
                     </ul>
 
                 </div>
+                <!-- The Modal -->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+  <!-- Modal Header -->
+  <div class="modal-header">
+    <h4 class="modal-title">About</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+
+  <!-- Modal body -->
+  <div class="modal-body">
+    <img src="{{asset('img/dts.png')}}" alt="">
+    <div class="container">
+      <p>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional. Program pelatihan kompetensi DTS 2019 ditujukan untuk meningkatkan keterampilan (up-skilling) SDM bidang Komunikasi dan Informatika sehingga dapat meningkatkan produktivitas dan daya saing bangsa. Program DTS 2019 secara garis besar dibagi menjadi empat akademi, yaitu:</p>
+      <ul>
+        <li>- Fresh Graduate Academy (FGA) , program pelatihan bagi lulusan D3, D4 dan S1 bidang TIK dan MIPA, terbuka bagi penyandang disabilitas;</li>
+        <li>- Vocational School Graduate Academy (VSGA) , program pelatihan bagi lulusan SMK;</li>
+        <li>- Coding Teacher Academy (CTA) , program pelatihan bagi para guru yang mengajar bidang TIK pada SMK, SMA, SMALB, dan Madrasah Aliyah (Terbuka bagi Guru PNS dan Non PNS); dan</li>
+        <li>- Online Academy (OA) , program pelatihan secara online bagi masyarakat umum termasuk ASN, mahasiswa, dan pelaku industri.</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- Modal footer -->
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+  <!-- Modal Header -->
+  <div class="modal-header">
+    <h4 class="modal-title">About</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+
+  <!-- Modal body -->
+  <div class="modal-body">
+    <img src="{{asset('img/dts.png')}}" alt="">
+    <div class="container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.035759999712!2d106.95690725069078!3d-6.259019995447367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d00ab3824a3%3A0x556821c39752eb5e!2sGunadarma%20University%20J6!5e0!3m2!1sen!2sid!4v1571494326208!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    </div>
+  </div>
+
+  <!-- Modal footer -->
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+
+</div>
+</div>
+</div>
             </div>
         </header>
 

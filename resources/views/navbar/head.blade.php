@@ -28,6 +28,8 @@
         <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
-        
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
 
     </head>
