@@ -20,8 +20,8 @@
             <a href="/">
                 <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-lg-10 col-md-6 col-sm-6 col-6 header-top-left no-padding">
-                        <ul class="navbar-nav ml-auto">
+                    <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
+                        <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
                              <li class="menu-active"><a style="color:white;" href="\">Home</a></li>
                              <li><a style="color:white;" href="\history">History Berita</a></li>
@@ -29,15 +29,16 @@
                                 <ul>
                                     <li><a style="color:black;" href="standard-post.html">DTS</a></li>
                                     <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
-                                </ul></li>
+                                </ul>
+                              </li>
                                 <li><a style="color:white;" href="\upload">Upload News</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal">About</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal1">Contact</a></li>
                             </ul>
                         </ul>
                         </div>
-                        <div class="col-lg-9 col-md-6 col-sm-6 col-6 header-top-right no-padding">
-                            <ul class="navbar-nav ml-auto">
+                        <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                            <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
                                 <li class="menu-has-children"><a style="color:white;" href="#">Login</a>
                                   <ul class="navbar-nav ml-auto">
@@ -45,11 +46,12 @@
                                         <li><a style="color:black;" href="{{url('/home')}}">User</a></li>
                                     </ul></li>
                                     <li class="nav-item"><a style="color: white;" class="nav-link" href="{{route('register')}}">Register</a></li>
-                                </ul>
+                                </ul></ul>
                         </div>
                     </div>
                 </div>
-            </div>
+                </nav>
+
 <!--           <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
                 <div class="container">
                     <a href="/">
@@ -57,11 +59,11 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                  <ul class="nav-menu">
-                            
+
                             </ul>
                         </div>
                     </div> -->
-                </nav>
+
                 <div class="logo-wrap">
                     <div class="container">
                        <h6><span style="color:red;">Breaking News:</span><marquee>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional.</marquee>
