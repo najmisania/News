@@ -50,7 +50,7 @@
           </nav>
             <div class="logo-wrap">
                 <div class="container">
-                    <marquee>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional.</marquee>
+                     <h6><span style="color:red;">Breaking News:</span><marquee>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional.</marquee>
                 </div>
             </div>
 
@@ -183,11 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="news-tracker-wrap">
-                                <h6><span>Breaking News:</span>   <a href="#">Astronomy Binoculars A Great Alternative</a></h6>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </section>
