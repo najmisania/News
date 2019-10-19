@@ -2,7 +2,7 @@
 <header>
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
     <div class="container">
-          <h1 style="color: white;">DTS News</h1>
+          <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt="">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>

@@ -4,7 +4,7 @@
           <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
                 <div class="container">
                     <a href="/">
-                    <h1 style="color: white;">DTS News</h1></a>
+                    <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
@@ -32,7 +32,7 @@
                 <div class="row align-items-center justify-content-between">
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
-                            <li class="menu-active"><a style="color:black;" href="index.html">Home</a></li>
+                            <li class="menu-active"><a style="color:black;" href="\">Home</a></li>
                             <li><a style="color:black;" href="\history">History Berita</a></li>
                             <li class="menu-has-children"><a style="color:black;" href="">Kategori Berita</a>
                             <ul>

@@ -1,19 +1,17 @@
-@include('navbar.head')
+@extends('navbar.head')
 <div class="header-top">
-	<div class="container">
-		<div class="row justify-content-between align-items-center">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
-				<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
-					<a href="/">
-						<h1 style="color: white;">DTS News</h1>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+                <a href="/">
+                    <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt="">
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
 <br>
 <div class="container">		
 	<h1 class="text-center">Upload Berita</h1> 
@@ -84,3 +82,4 @@
 <br>
 <br>
 @include('navbar.footer')
+@include('navbar.script')
