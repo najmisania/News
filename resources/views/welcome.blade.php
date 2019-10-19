@@ -32,17 +32,11 @@
                             <li><a style="color:white;" href="\upload">Upload News</a></li>
                             <li><a style="color:white;" data-toggle="modal" data-target="#myModal">About</a></li>
                             <li><a style="color:white;" data-toggle="modal" data-target="#myModal1">Contact</a></li>
-                                <li class="nav-item dropdown">
-                                  <a style="color: white;" id="navbarDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre href="{{route('login')}}"><span class="lnr lnr-phone-user"></span><span>Login</span></a>
-                                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="{{ url('/admin') }}">
-                                          {{ __('Admin') }}
-                                      </a>
-                                      <a class="dropdown-item" href="{{ url('/login') }}">
-                                          {{ __('User') }}
-                                      </a>
-                                  </div>
-                                </li>
+                            <li class="menu-has-children"><a style="color:white;" href="#">Login</a>
+                            <ul>
+                                <li><a style="color:black;" href="{{url('/admin')}}">Admin</a></li>
+                                <li><a style="color:black;" href="{{url('/home')}}">User</a></li>
+                            </ul></li>
                                 <li class="nav-item"><a style="color: white;" class="nav-link" href="{{route('register')}}">Register</a></li>
                             </ul>
                         </div>
@@ -183,7 +177,7 @@
                                 </div>
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </section>
