@@ -40,8 +40,7 @@
             <div class="logo-wrap">
                 <div class="container">
 
-                </div>
-            </div>
+
             <div class="container main-menu" id="main-menu">
                 <div class="row align-items-center justify-content-between">
                     <nav id="nav-menu-container">
@@ -677,6 +676,8 @@
                         </div>
                     </div>
                 </div>
+              </div>
+          </div></div>
             </section>
             <!-- End latest-post Area -->
 @include('navbar.footer')
