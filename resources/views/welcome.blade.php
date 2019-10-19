@@ -48,7 +48,7 @@
                         <ul class="nav-menu">
                             <li class="menu-active"><a style="color:black;" href="\">Home</a></li>
                             <li><a style="color:black;" href="\history">History Berita</a></li>
-                            <li class="menu-has-children"><a style="color:black;" href="">Kategori Berita</a>
+                            <li class="menu-has-children"><a style="color:black;" href="#">Kategori Berita</a>
                             <ul>
                                 <li><a style="color:black;" href="standard-post.html">DTS</a></li>
                                 <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
