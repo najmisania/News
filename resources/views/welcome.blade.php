@@ -30,8 +30,8 @@
                                 <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
                             </ul></li>
                             <li><a style="color:white;" href="\upload">Upload News</a></li>
-                            <li><a style="color:white;" data-toggle="modal" data-target="#myModal">About</a></li>
-                            <li><a style="color:white;" data-toggle="modal" data-target="#myModal1">Contact</a></li>
+                            <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal">About</a></li>
+                            <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal1">Contact</a></li>
                             <li class="menu-has-children"><a style="color:white;" href="#">Login</a>
                             <ul>
                                 <li><a style="color:black;" href="{{url('/admin')}}">Admin</a></li>
@@ -100,7 +100,10 @@
         <br>
         <br>
         <br>
-      <div class="text-left">
+        <div class="row">
+
+
+      <div class="col-md-6">
         <p>Alamat:</p>
         <ul>
             <li> Jl. Cikunir Raya No.2, Jaka Mulya, Bekasi Selatan, Kota Bekasi, Jawa Barat</li>
@@ -108,8 +111,9 @@
             <li> (021) 78881112</li>
         </ul>
     </div>
-      <div class="text-rigth">
+      <div class="col-md-6">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.035759999712!2d106.95690725069078!3d-6.259019995447367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d00ab3824a3%3A0x556821c39752eb5e!2sGunadarma%20University%20J6!5e0!3m2!1sen!2sid!4v1571494326208!5m2!1sen!2sid" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
       </div>
 
     </div>
