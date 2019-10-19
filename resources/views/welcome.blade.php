@@ -53,35 +53,7 @@
                     <marquee>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional.</marquee>
                 </div>
             </div>
-<!--             <div class="container main-menu" id="main-menu">
-                <div class="row align-items-center justify-content-between">
-                    <nav id="nav-menu-container">
-                        <ul class="nav-menu">
-                            <li class="menu-active"><a style="color:black;" href="\">Home</a></li>
-                            <li><a style="color:black;" href="\history">History Berita</a></li>
-                            <li class="menu-has-children"><a style="color:black;" href="#">Kategori Berita</a>
-                            <ul>
-                                <li><a style="color:black;" href="standard-post.html">DTS</a></li>
-                                <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
-                            </ul></li>
-                            <li><a style="color:black;" href="\upload">Upload News</a></li>
-                            <li><a style="color:black;" data-toggle="modal" data-target="#myModal">About</a></li>
-                            <li><a style="color:black;" data-toggle="modal" data-target="#myModal1">Contact</a></li>
-                      </nav>
-                      <div class="navbar-right">
-                          <form class="Search">
-                              <input type="text" class="form-control Search-box"  name="Search-box" id="Search-box" placeholder="Search">
-                              <label for="Search-box" class="Search-box-label" style="color:black;">
-                                  <span class="lnr lnr-magnifier" style="color:black;"></span>
-                              </label>
-                              <span class="Search-close">
-                                  <span class="lnr lnr-cross"></span>
-                              </span>
-                          </form>
-                      </div>
-                    </ul>
 
-                </div> -->
                 <!-- The Modal -->
 <div class="modal fade" id="myModal">
 <div class="modal-dialog modal-xl">
