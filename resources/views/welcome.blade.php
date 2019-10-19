@@ -21,6 +21,17 @@
                     <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
+                                 <ul class="nav-menu">
+                            <li class="menu-active"><a style="color:white;" href="\">Home</a></li>
+                            <li><a style="color:white;" href="\history">History Berita</a></li>
+                            <li class="menu-has-children"><a style="color:white;" href="#">Kategori Berita</a>
+                            <ul>
+                                <li><a style="color:black;" href="standard-post.html">DTS</a></li>
+                                <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
+                            </ul></li>
+                            <li><a style="color:white;" href="\upload">Upload News</a></li>
+                            <li><a style="color:white;" data-toggle="modal" data-target="#myModal">About</a></li>
+                            <li><a style="color:white;" data-toggle="modal" data-target="#myModal1">Contact</a></li>
                                 <li class="nav-item dropdown">
                                   <a style="color: white;" id="navbarDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre href="{{route('login')}}"><span class="lnr lnr-phone-user"></span><span>Login</span></a>
                                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -42,7 +53,7 @@
                     <marquee>Program Digital Talent Scholarship Tahun 2019 (DTS 2019) merupakan program pengembangan sumber daya manusia (SDM) yang dilaksanakan Kementerian Komunikasi dan Informatika (Kemenkominfo) sebagai bagian dari program pembangunan prioritas nasional.</marquee>
                 </div>
             </div>
-            <div class="container main-menu" id="main-menu">
+<!--             <div class="container main-menu" id="main-menu">
                 <div class="row align-items-center justify-content-between">
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
@@ -59,9 +70,9 @@
                       </nav>
                       <div class="navbar-right">
                           <form class="Search">
-                              <input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
-                              <label for="Search-box" class="Search-box-label">
-                                  <span class="lnr lnr-magnifier"></span>
+                              <input type="text" class="form-control Search-box"  name="Search-box" id="Search-box" placeholder="Search">
+                              <label for="Search-box" class="Search-box-label" style="color:black;">
+                                  <span class="lnr lnr-magnifier" style="color:black;"></span>
                               </label>
                               <span class="Search-close">
                                   <span class="lnr lnr-cross"></span>
@@ -70,7 +81,7 @@
                       </div>
                     </ul>
 
-                </div>
+                </div> -->
                 <!-- The Modal -->
 <div class="modal fade" id="myModal">
 <div class="modal-dialog modal-xl">
@@ -144,14 +155,14 @@
                         <div class="col-lg-8 top-post-left">
                             <div class="feature-image-thumb relative">
                                 <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{asset('img/top-post1.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                             </div>
                             <div class="top-post-details">
                                 <ul class="tags">
-                                    <li><a href="#">Food Habit</a></li>
+                                    <li><a href="#">News DTS</a></li>
                                 </ul>
                                 <a href="image-post.html">
-                                    <h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
+                                    <h3>Coaching “Personal Development & Ready To Work Profile” dan Job Fair Universitas Negeri Padang 2019 pada 16-17 Oktober 2019</h3>
                                 </a>
                                 <ul class="meta">
                                     <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
