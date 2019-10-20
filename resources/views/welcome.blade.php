@@ -26,7 +26,7 @@
                              <li class="menu-active"><a style="color:white;" href="\">Home</a></li>
                              <li><a style="color:white;" href="\history">History Berita</a></li>
                              <li class="menu-has-children"><a style="color:white;" href="#">Kategori Berita</a>
-                                <ul>
+                                <ul class="nav-menu">
                                     <li><a style="color:black;" href="standard-post.html">DTS</a></li>
                                     <li><a style="color:black;" href="image-post.html">NON DTS</a></li>
                                 </ul>
@@ -41,7 +41,7 @@
                             <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
                                 <li class="menu-has-children"><a style="color:white;" href="#">Login</a>
-                                  <ul class="navbar-nav ml-auto">
+                                  <ul class="nav-menu">
                                         <li><a style="color:black;" href="{{url('/admin')}}">Admin</a></li>
                                         <li><a style="color:black;" href="{{url('/home')}}">User</a></li>
                                     </ul></li>
