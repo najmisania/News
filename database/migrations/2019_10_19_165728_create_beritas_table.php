@@ -20,7 +20,7 @@ class CreateBeritasTable extends Migration
             $table->string('kategori');
             $table->text('ringkasan');
             $table->text('isi');
-            $table->timestamps();
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
 
         });
     }
