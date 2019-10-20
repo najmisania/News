@@ -51,6 +51,7 @@
                     </div>
                 </div>
                 </nav>
+            </header>
 
 <!--           <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
                 <div class="container">
