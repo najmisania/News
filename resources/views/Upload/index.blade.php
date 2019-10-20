@@ -39,7 +39,7 @@
 		<div class="form-group row">
 			<label for="subjudulberita" class="col-sm-2 col-form-label">Kategori</label>
 			<div class="col-3">
-				<select name="kategori" class="form-control" id="kategori">
+				<select name="kategori" class="form-control" id="kategori" style="width: 195px">
 				<option selected disabled>-- Pilih Kategori --</option>
 				<option value="DTS">DTS</option>
 				<option value="NON-DTS">NON-DTS</option>
