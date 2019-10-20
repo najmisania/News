@@ -24,22 +24,15 @@ class BeritaController extends Controller
 
 	public function store(Request $request)
 	{
-		$this->validate($request, [
-			'judul' => 'required',
-			'sub_judul' => 'required',
-			'kategori' => 'required',
-			'ringkasan' => 'required',
-			'isi' => 'required',
-		]);
-
-		$test = Berita::create([
-			'judul' => $request->judul,
-			'sub_judul' => $request->sub_judul,
+		DB::table('berita')->insert([
+			'judul' => $request->judulberita,
+			'sub_judul' => $request->subjudulberita,
 			'kategori' => $request->kategori,
 			'ringkasan' => $request->ringkasan,
-			'isi' => $request->isi,
+			'isi' => $request->isiberita,
+	
 		]);
-		
-		return redirect('/history/index');
-	}
+		// alihkan halaman ke halaman pegawai
+		return redirect('/history');
+		}
 }
