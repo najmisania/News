@@ -23,10 +23,10 @@ class BeritaController extends Controller
 	{
 		$this->validate($request, [
 			'judul' => 'required',
-			// 'sub_judul' => 'required',
-			// 'kategori' => 'required',
-			// 'ringkasan' => 'required',
-			// 'isi' => 'required',
+			'sub_judul' => 'required',
+			'kategori' => 'required',
+			'ringkasan' => 'required',
+			'isi' => 'required',
 		]);
 
 		$test = Berita::create([
@@ -36,7 +36,7 @@ class BeritaController extends Controller
 			'ringkasan' => $request->ringkasan,
 			'isi' => $request->isi,
 		]);
-		dd($test);
-		// return redirect('/history/index');
+		
+		return redirect('/history/index');
 	}
 }
