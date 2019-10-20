@@ -38,7 +38,7 @@
 
                           <th class=" text-center">Kategori Berita</th>
 
-                          <th class=" text-center">Isi Berita</th>
+                          <th class=" text-center">Ringkasan Berita</th>
                           <th class=" text-center">Tanggal</th>
 
 
@@ -54,7 +54,7 @@
                             <td class=" text-center">{{ $brt->judul }}</td>
 
                             <td class=" text-center">{{ $brt->kategori }}</td>
-                            <td class=" text-center">{{ $brt->isi }}</td>
+                            <td class=" text-center">{{ $brt->ringkasan }}</td>
                             <th class=" text-center">{{ $brt->created_at}}</th>
 
 
