@@ -42,8 +42,8 @@
                             <ul class="nav-menu">
                                 <li class="menu-has-children"><a style="color:white;" href="#">Login</a>
                                   <ul class="nav-menu">
-                                        <li><a style="color:black;" href="{{url('/admin')}}">Admin</a></li>
-                                        <li><a style="color:black;" href="{{url('/home')}}">User</a></li>
+                                        <li><a style="color:black;" href="{{url('/admin/login')}}">Admin</a></li>
+                                        <li><a style="color:black;" href="{{url('/login')}}">User</a></li>
                                     </ul></li>
                                     <li class="nav-item"><a style="color: white;" class="nav-link" href="{{route('register')}}">Register</a></li>
                                 </ul></ul>
