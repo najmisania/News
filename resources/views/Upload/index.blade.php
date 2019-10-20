@@ -13,72 +13,48 @@
 	</div>
 </div>
 <br>
-<div class="container">		
-	<h1 class="text-center">Upload Berita</h1> 
+<div class="container">
+	<h1 class="text-center">Upload Berita</h1>
 	<br>
 	<br>
 	<br>
 	<br>
 	<form action="/upload/berita" method="post">
 
-		@csrf
-		
+		  {{csrf_field()}}
+
 		<div class="form-group row">
 			<label for="judulberita" class="col-sm-2 col-form-label">Judul Berita</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="judulberita" placeholder="">
-				{{-- @if($errors->has('judul'))
-				<div class="text-danger">
-					{{ $errors->first('judul')}}
-				</div>
-				@endif --}}
+				<input type="text" class="form-control" name="judulberita" id="judulberita" placeholder="">
 			</div>
 		</div>
 		<div class="form-group row">
 			<label for="subjudulberita" class="col-sm-2 col-form-label">Sub Judul Berita</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="subjudulberita" placeholder="">
+				<input type="text" name="subjudulberita" class="form-control" id="subjudulberita" placeholder="">
 			</div>
 		</div>
-		<div class="form-group row">
-			<label for="judulberita" class="col-sm-2 col-form-label">Tanggal</label>
-			<div class="col-sm-3">
-				<input type="text" class="form-control" id="judulberita" placeholder="">
-			</div>
-			<label for="judulberita" class="col-form-label">Jam</label>
-			<div class="col-sm-3">
-				<input type="text" class="form-control" id="judulberita" placeholder="">
-			</div>
-		</div>
+
 		<fieldset class="form-group">
-			<div class="row">
-				<legend class="col-form-label col-sm-2 pt-0">Kategori Berita</legend>
-				<div class="col-sm-10">
-					<div class="form-check">
-						<input class="form-check-input" type="radio" name="gridRadios" id="dts" value="DTS" checked>
-						<label class="form-check-label" for="dts">
-							DTS
-						</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="radio" name="gridRadios" id="nondts" value="Non DTS">
-						<label class="form-check-label" for="nondts">
-							Non DTS
-						</label>
-					</div>
-				</div>
-			</div>
+
+							<label for="kategori">Kategori</label>
+							<select name="kategori" class="form-control" id="kategori">
+								<option>DTS</option>
+								<option>NON-DTS</option>
+							</select>
+
 		</fieldset>
 		<div class="form-group row">
 			<label for="ringkasan" class="col-sm-2 col-form-label">Ringkasan Berita</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="ringkasan" placeholder="">
+				<input type="text" name="ringkasan" class="form-control" id="ringkasan" placeholder="">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="isiberita">Isi Berita</label>
-			<textarea class="form-control" id="isiberita" rows="7"></textarea>
-		</div>		
+			<textarea class="form-control" name="isiberita" class="isiberita" id="isiberita" rows="7"></textarea>
+		</div>
 		<button type="submit" class="btn btn-primary">Simpan</button>
 	</form>
 </div>

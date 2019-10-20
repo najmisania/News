@@ -37,7 +37,7 @@
                             </ul>
                         </ul>
                         </div>
-                        <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right no-padding">
+                        <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
                             <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
                                 <li class="menu-has-children"><a style="color:white;" href="#">Login</a>

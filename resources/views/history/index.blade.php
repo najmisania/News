@@ -9,7 +9,7 @@
                             </a>
                         </div>
                       </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -35,11 +35,13 @@
                         <tr>
                           <th class=" text-center">NO</th>
                           <th class=" text-center">Judul Berita</th>
-                          <th class=" text-center">Tanggal Upload</th>
+
                           <th class=" text-center">Kategori Berita</th>
 
                           <th class=" text-center">Isi Berita</th>
-                          <th class=" text-center">Status Berita</th>
+                          <th class=" text-center">Tanggal</th>
+
+
                           <th class=" text-center">Opsi</th>
 
                         </tr>
@@ -50,10 +52,12 @@
                           <tr>
                             <td class=" text-center">{{ $no }}</td>
                             <td class=" text-center">{{ $brt->judul }}</td>
-                            <td class=" text-center"></td>
+
                             <td class=" text-center">{{ $brt->kategori }}</td>
                             <td class=" text-center">{{ $brt->isi }}</td>
-                            <td class=" text-center"></td>
+                            <th class=" text-center">{{ $brt->created_at}}</th>
+
+
                             <td class=" text-center">
                               <a href="" class=" btn btn-primary btn-sm">Lihat Berita</a>
                               <a href="" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
@@ -61,9 +65,9 @@
                           </tr>
                           @php
                             $no++;
-                          @endphp 
+                          @endphp
                         @endforeach
-   
+
                       </table>
                     </form>
                     </div>

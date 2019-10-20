@@ -13,13 +13,14 @@ class CreateBeritasTable extends Migration
      */
     public function up()
     {
-        Schema::create('beritas', function (Blueprint $table) {
+        Schema::create('berita', function (Blueprint $table) {
             $table->increments('id');
             $table->string('judul');
             $table->string('sub_judul');
             $table->string('kategori');
             $table->text('ringkasan');
             $table->text('isi');
+            $table->timestamps();
 
         });
     }
@@ -31,6 +32,6 @@ class CreateBeritasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('beritas');
+        Schema::dropIfExists('berita');
     }
 }
