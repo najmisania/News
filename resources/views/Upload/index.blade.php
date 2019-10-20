@@ -36,16 +36,18 @@
 			</div>
 		</div>
 
-		<fieldset class="form-group">
-
-			<label for="kategori">Kategori</label>
-			<select name="kategori" class="form-control" id="kategori">
+		<div class="form-group row">
+			<label for="subjudulberita" class="col-sm-2 col-form-label">Kategori</label>
+			<div class="col-3">
+				<select name="kategori" class="form-control" id="kategori">
 				<option selected disabled>-- Pilih Kategori --</option>
 				<option value="DTS">DTS</option>
 				<option value="NON-DTS">NON-DTS</option>
 			</select>
+			</div>
+		</div> 
 
-		</fieldset>
+	
 		<div class="form-group row">
 			<label for="ringkasan" class="col-sm-2 col-form-label">Ringkasan Berita</label>
 			<div class="col-sm-10">
