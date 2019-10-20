@@ -21,7 +21,7 @@
 	<br>
 	<form action="/upload/berita" method="post">
 
-		  {{csrf_field()}}
+		{{csrf_field()}}
 
 		<div class="form-group row">
 			<label for="judulberita" class="col-sm-2 col-form-label">Judul Berita</label>
@@ -38,11 +38,12 @@
 
 		<fieldset class="form-group">
 
-							<label for="kategori">Kategori</label>
-							<select name="kategori" class="form-control" id="kategori">
-								<option>DTS</option>
-								<option>NON-DTS</option>
-							</select>
+			<label for="kategori">Kategori</label>
+			<select name="kategori" class="form-control" id="kategori">
+				<option selected disabled>-- Pilih Kategori --</option>
+				<option value="DTS">DTS</option>
+				<option value="NON-DTS">NON-DTS</option>
+			</select>
 
 		</fieldset>
 		<div class="form-group row">
