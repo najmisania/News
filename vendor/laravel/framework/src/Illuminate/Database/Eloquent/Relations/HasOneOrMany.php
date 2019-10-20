@@ -2,9 +2,9 @@
 
 namespace Illuminate\Database\Eloquent\Relations;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
 
 abstract class HasOneOrMany extends Relation
 {
@@ -255,8 +255,8 @@ abstract class HasOneOrMany extends Relation
     /**
      * Attach a collection of models to the parent instance.
      *
-     * @param  \Traversable|array  $models
-     * @return \Traversable|array
+     * @param  iterable  $models
+     * @return iterable
      */
     public function saveMany($models)
     {
@@ -285,10 +285,10 @@ abstract class HasOneOrMany extends Relation
     /**
      * Create a Collection of new instances of the related model.
      *
-     * @param  array  $records
+     * @param  iterable  $records
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function createMany(array $records)
+    public function createMany(iterable $records)
     {
         $instances = $this->related->newCollection();
 
@@ -308,21 +308,6 @@ abstract class HasOneOrMany extends Relation
     protected function setForeignAttributesForCreate(Model $model)
     {
         $model->setAttribute($this->getForeignKeyName(), $this->getParentKey());
-    }
-
-    /**
-     * Perform an update on all the related models.
-     *
-     * @param  array  $attributes
-     * @return int
-     */
-    public function update(array $attributes)
-    {
-        if ($this->related->usesTimestamps() && ! is_null($this->relatedUpdatedAt())) {
-            $attributes[$this->relatedUpdatedAt()] = $this->related->freshTimestampString();
-        }
-
-        return $this->query->update($attributes);
     }
 
     /**
