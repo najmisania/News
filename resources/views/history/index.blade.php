@@ -43,22 +43,27 @@
                           <th class=" text-center">Opsi</th>
 
                         </tr>
-                        
+                        @php
+                          $no = 1;
+                        @endphp
+                        @foreach ($berita as $brt)
                           <tr>
+                            <td class=" text-center">{{ $no }}</td>
+                            <td class=" text-center">{{ $brt->judul }}</td>
                             <td class=" text-center"></td>
-                            <td class=" text-center"></td>
-                            <td class=" text-center"></td>
-                            <td class=" text-center"></td>
-                            <td class=" text-center"></td>
+                            <td class=" text-center">{{ $brt->kategori }}</td>
+                            <td class=" text-center">{{ $brt->isi }}</td>
                             <td class=" text-center"></td>
                             <td class=" text-center">
                               <a href="" class=" btn btn-primary btn-sm">Lihat Berita</a>
                               <a href="" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                             </td>
-
                           </tr>
-                      
-                      
+                          @php
+                            $no++;
+                          @endphp 
+                        @endforeach
+   
                       </table>
                     </form>
                     </div>
