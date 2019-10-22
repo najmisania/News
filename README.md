@@ -1,6 +1,22 @@
 <h1>Fitur Sistem : </h1>
 <p>Website News adalah sebuah sistem yang memiliki fitur untuk melihat seluruh data Berita yang telah di inputkan oleh Admin maupun User.</p>
+<p>Fitur yang terdapat pada sistem meliputi:</p>
+<ul>
+    <li>Beranda</li>
+    <li>History Berita</li>
+    <li>Kategori Berita</li>
+    <ul>
+        <li>News DTS</li>
+        <li>News Non DTS</li>
+    </ul>
+    <li>Upload News</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Login</li>
+    <li>Register</li>
+</ul>
 
+<br><br>
 <h1>Data Dictionary : </h1>
 Tabel admin :
 <ul>
