@@ -14,6 +14,7 @@ Route::get('/history', 'BeritaController@index');
 
 Route::get('/upload', 'BeritaController@tambah');
 Route::post('/upload/berita', 'BeritaController@store');
+Route::get('/upload/hapus/{id}', 'BeritaController@hapus');
 //  ---- End CRUD Berita
 
 Route::group(['prefix' => 'admin'], function(){

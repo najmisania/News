@@ -60,7 +60,7 @@
 
                             <td class=" text-center">
                               <a href="" class=" btn btn-primary btn-sm">Lihat Berita</a>
-                              <a href="" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                              <a href="/upload/hapus/{{$brt->id}}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                             </td>
                           </tr>
                           @php

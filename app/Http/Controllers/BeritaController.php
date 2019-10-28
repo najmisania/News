@@ -34,5 +34,12 @@ class BeritaController extends Controller
 		]);
 		// alihkan halaman ke halaman pegawai
 		return redirect('/history');
-		}
+	}
+
+	public function hapus($id)
+	{
+		$berita = Berita::find($id);
+		$berita->delete();
+		return redirect('/history');
+	}
 }
