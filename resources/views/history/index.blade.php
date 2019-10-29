@@ -30,6 +30,8 @@
                     <div class="text-center">
                       <h1 class="h4 text-gray-900 mb-4"></h1>
                     </div><hr>
+                    <a href="/upload" class="btn btn-success">Upload News</a>
+                    <br><br>
                     <form class="user" method="post" action="">
                       <table  class="table">
                         <tr>
@@ -60,6 +62,7 @@
 
                             <td class=" text-center">
                               <a href="" class=" btn btn-primary btn-sm">Lihat Berita</a>
+                              <a href="" class=" btn btn-warning btn-sm">Edit</a>
                               <a href="/upload/hapus/{{$brt->id}}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                             </td>
                           </tr>
