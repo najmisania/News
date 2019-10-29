@@ -24,7 +24,14 @@ class BeritaController extends Controller
 
 	public function store(Request $request)
 	{
-		DB::table('berita')->insert([
+		$this->validate($request, [
+			'judul' => 'required',
+			'sub_judul' => 'required',
+			'kategori' => 'required',
+			'ringkasan' => 'required',
+			'isi' => 'required'
+		]);
+		Berita::create([
 			'judul' => $request->judul,
 			'sub_judul' => $request->sub_judul,
 			'kategori' => $request->kategori,
