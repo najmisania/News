@@ -13,7 +13,7 @@ class BeritaController extends Controller
 	{
 		$berita = DB::table('berita')->get();
 
-    	// mengirim data pegawai ke view index
+    	// mengirim data berita ke view index
     	return view('history.index',['berita' => $berita]);
 	}
 
@@ -32,14 +32,40 @@ class BeritaController extends Controller
 			'isi' => $request->isiberita,
 	
 		]);
-		// alihkan halaman ke halaman pegawai
-		return redirect('/history');
+		// alihkan halaman ke halaman history
+		return redirect('history');
+	}
+
+	public function edit($id)
+	{
+		$berita = Berita::find($id);
+		return view('upload.edit', ['berita' => $berita]);
+	}
+
+	public function update($id, Request $request)
+	{
+		$this->validate($request, [
+			'judul' => 'required',
+			'sub_judul' => 'required',
+			'kategori' => 'required',
+			'ringkasan' => 'required',
+			'isi' => 'required',
+		]);
+
+		$berita = Berita::find($id);
+		$berita->judul = $request->judul;
+		$berita->sub_judul = $request->sub_judul;
+		$berita->kategori = $request->kategori;
+		$berita->ringkasan = $request->ringkasan;
+		$berita->isi = $request->isi;
+		$berita->save();
+		return redirect('history');
 	}
 
 	public function hapus($id)
 	{
 		$berita = Berita::find($id);
 		$berita->delete();
-		return redirect('/history');
+		return redirect('history');
 	}
 }
