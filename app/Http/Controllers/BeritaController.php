@@ -12,7 +12,7 @@ class BeritaController extends Controller
 	public function index()
 	{
 		$berita = DB::table('berita')->get();
-
+		
     	// mengirim data berita ke view index
     	return view('history.index',['berita' => $berita]);
 	}
