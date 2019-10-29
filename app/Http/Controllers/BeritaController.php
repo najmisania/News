@@ -25,21 +25,21 @@ class BeritaController extends Controller
 	public function store(Request $request)
 	{
 		DB::table('berita')->insert([
-			'judul' => $request->judulberita,
-			'sub_judul' => $request->subjudulberita,
+			'judul' => $request->judul,
+			'sub_judul' => $request->sub_judul,
 			'kategori' => $request->kategori,
 			'ringkasan' => $request->ringkasan,
-			'isi' => $request->isiberita,
-	
+			'isi' => $request->isi,
+
 		]);
 		// alihkan halaman ke halaman history
-		return redirect('history');
+		return redirect('/history');
 	}
 
 	public function edit($id)
 	{
 		$berita = Berita::find($id);
-		return view('upload.edit', ['berita' => $berita]);
+		return view('Upload.edit', ['berita' => $berita]);
 	}
 
 	public function update($id, Request $request)
@@ -59,7 +59,7 @@ class BeritaController extends Controller
 		$berita->ringkasan = $request->ringkasan;
 		$berita->isi = $request->isi;
 		$berita->save();
-		return redirect('history');
+		return redirect('/history');
 	}
 
 	public function hapus($id)

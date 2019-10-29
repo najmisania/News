@@ -19,36 +19,36 @@
 	<br>
 	<br>
 	<br>
-	<form action="/upload/berita/update/{{ $berita->id }}" method="post">
+	<form action="/history/update/{{ $berita->id }}" method="post">
 
 		{{csrf_field()}}
 		{{ method_field('PUT') }}
 
 		<div class="form-group row">
-			<label for="judulberita" class="col-sm-2 col-form-label">Judul Berita</label>
+			<label for="judul" class="col-sm-2 col-form-label">Judul Berita</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" name="judulberita" id="judulberita" value="{{ $berita->judul }}">
+				<input type="text" class="form-control" name="judul" id="judul" value="{{ $berita->judul }}">
 			</div>
 		</div>
 		<div class="form-group row">
-			<label for="subjudulberita" class="col-sm-2 col-form-label">Sub Judul Berita</label>
+			<label for="sub_judul" class="col-sm-2 col-form-label">Sub Judul Berita</label>
 			<div class="col-sm-10">
-				<input type="text" name="subjudulberita" class="form-control" id="subjudulberita" value="{{ $berita->sub_judul }}">
+				<input type="text" name="sub_judul" class="form-control" id="sub_judul" value="{{ $berita->sub_judul }}">
 			</div>
 		</div>
 
 		<div class="form-group row">
-			<label for="subjudulberita" class="col-sm-2 col-form-label">Kategori</label>
+			<label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
 			<div class="col-3">
 				<select name="kategori" class="form-control" id="kategori" style="width: 195px">
 				<option selected disabled value="{{ $berita->kategori }}">{{ $berita->kategori }}</option>
-				<option value="DTS">DTS</option>
-				<option value="NON-DTS">NON-DTS</option>
+				<option value="DTS" @if($berita->berita == 'DTS') selected @endif>DTS</option>
+				<option value="NON-DTS" @if($berita->berita == 'NON-DTS') selected @endif>NON-DTS</option>
 			</select>
 			</div>
-		</div> 
+		</div>
 
-	
+
 		<div class="form-group row">
 			<label for="ringkasan" class="col-sm-2 col-form-label">Ringkasan Berita</label>
 			<div class="col-sm-10">
@@ -56,8 +56,8 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="isiberita">Isi Berita</label>
-			<textarea class="form-control" name="isiberita" class="isiberita" id="isiberita" rows="7">{{ $berita->isi }}</textarea>
+			<label for="isi">Isi Berita</label>
+			<textarea class="form-control" name="isi" id="isi" rows="7">{{ $berita->isi }}</textarea>
 		</div>
 		<button type="submit" class="btn btn-primary">Simpan</button>
 	</form>

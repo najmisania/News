@@ -24,20 +24,20 @@
 		{{csrf_field()}}
 
 		<div class="form-group row">
-			<label for="judulberita" class="col-sm-2 col-form-label">Judul Berita</label>
+			<label for="judul" class="col-sm-2 col-form-label">Judul Berita</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" name="judulberita" id="judulberita" placeholder="">
+				<input type="text" class="form-control" name="judul" id="judul" placeholder="">
 			</div>
 		</div>
 		<div class="form-group row">
-			<label for="subjudulberita" class="col-sm-2 col-form-label">Sub Judul Berita</label>
+			<label for="sub_judul" class="col-sm-2 col-form-label">Sub Judul Berita</label>
 			<div class="col-sm-10">
-				<input type="text" name="subjudulberita" class="form-control" id="subjudulberita" placeholder="">
+				<input type="text" name="sub_judul" class="form-control" id="sub_judul" placeholder="">
 			</div>
 		</div>
 
 		<div class="form-group row">
-			<label for="subjudulberita" class="col-sm-2 col-form-label">Kategori</label>
+			<label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
 			<div class="col-3">
 				<select name="kategori" class="form-control" id="kategori" style="width: 195px">
 				<option selected disabled>-- Pilih Kategori --</option>
@@ -45,9 +45,9 @@
 				<option value="NON-DTS">NON-DTS</option>
 			</select>
 			</div>
-		</div> 
+		</div>
 
-	
+
 		<div class="form-group row">
 			<label for="ringkasan" class="col-sm-2 col-form-label">Ringkasan Berita</label>
 			<div class="col-sm-10">
@@ -55,8 +55,8 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="isiberita">Isi Berita</label>
-			<textarea class="form-control" name="isiberita" class="isiberita" id="isiberita" rows="7"></textarea>
+			<label for="isi">Isi Berita</label>
+			<textarea class="form-control" name="isi" class="isi" id="isi" rows="7"></textarea>
 		</div>
 		<button type="submit" class="btn btn-primary">Simpan</button>
 	</form>
