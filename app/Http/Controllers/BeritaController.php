@@ -12,9 +12,9 @@ class BeritaController extends Controller
 	public function index()
 	{
 		$berita = DB::table('berita')->get();
-		
+
     	// mengirim data berita ke view index
-    	return view('history.index',['berita' => $berita]);
+    	return view('history.index',['berita'=> $berita]); 
 	}
 
 	public function tambah()
@@ -66,7 +66,7 @@ class BeritaController extends Controller
 		$berita->ringkasan = $request->ringkasan;
 		$berita->isi = $request->isi;
 		$berita->save();
-		return redirect('history');
+		return redirect('/history');
 	}
 
 	public function hapus($id)
