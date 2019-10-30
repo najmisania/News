@@ -8,24 +8,14 @@ use App\Berita;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $berita = Berita::all();
+        $berita = DB::table('berita')->get();
         return view('welcome', ['berita' => $berita]);
     }
    
