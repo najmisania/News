@@ -23,8 +23,8 @@
                     <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
                         <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
-                             <li class="menu-active"><a style="color:white;" href="\">Home</a></li>
-                             <li><a style="color:white;" href="\history">History Berita</a></li>
+                             
+                             
                              <li class="menu-has-children"><a style="color:white;" href="#">Kategori Berita</a>
                                 <ul class="nav-menu">
                                     <li><a style="color:black;" href="standard-post.html">DTS</a></li>
@@ -32,6 +32,7 @@
                                 </ul>
                               </li>
                                 <li><a style="color:white;" href="\upload">Upload News</a></li>
+                                <li><a style="color:white;" href="\history">History Berita</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal">About</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal1">Contact</a></li>
                                 <li><a style="color:white;" href="#">Jadwal</a></li>
@@ -78,7 +79,7 @@
                     </div>
                     <div class="top-post-details">
                         <ul class="tags">
-                            <li><a href="#">News DTS</a></li>
+                            <li><a href="#">DTS</a></li>
                         </ul>
                         <a href="image-post.html">
                             <h3>Coaching “Personal Development & Ready To Work Profile” dan Job Fair Universitas Negeri Padang 2019 pada 16-17 Oktober 2019</h3>
@@ -94,7 +95,7 @@
                     <div class="single-top-post">
                         <div class="feature-image-thumb relative">
                             <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="{{asset('img/top-post2.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                         </div>
                         <div class="top-post-details">
                             <ul class="tags">
@@ -113,7 +114,7 @@
                     <div class="single-top-post mt-10">
                         <div class="feature-image-thumb relative">
                             <div class="overlay overlay-bg"></div>
-                            <img class="img-fluid" src="{{asset('img/top-post3.jpg')}}" alt="">
+                            <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                         </div>
                         <div class="top-post-details">
                             <ul class="tags">
@@ -150,10 +151,10 @@
                             <div class="col-lg-5 post-left">
                                 <div class="feature-img relative">
                                     <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('img/l1.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                                 </div>
                                 <ul class="tags">
-                                    <li><a href="/history/lihat{$id}">{{$brt->kategori}}</a></li>
+                                    <li><a href="/history">{{$brt->kategori}}</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-7 post-right">
@@ -183,7 +184,7 @@
                         <div class="feature-post relative">
                             <div class="feature-img relative">
                                 <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{asset('img/f1.jpg')}}" alt="">
+                                <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                             </div>
                             <div class="details">
                                 <ul class="tags">
@@ -204,7 +205,7 @@
                                 <div class="feature-img-wrap relative">
                                     <div class="feature-img relative">
                                         <div class="overlay overlay-bg"></div>
-                                        <img class="img-fluid" src="img/f2.jpg" alt="">
+                                        <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                                     </div>
                                     <ul class="tags">
                                         <li><a href="#">Travel</a></li>
@@ -229,7 +230,7 @@
                                 <div class="feature-img-wrap relative">
                                     <div class="feature-img relative">
                                         <div class="overlay overlay-bg"></div>
-                                        <img class="img-fluid" src="{{asset('img/f3.jpg')}}" alt="">
+                                        <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
                                     </div>
                                     <ul class="tags">
                                         <li><a href="#">Travel</a></li>

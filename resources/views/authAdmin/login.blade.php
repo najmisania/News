@@ -72,12 +72,23 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
-
+                                <br>
+                                <br>
+                            <div class="text-left medium">
+                                Don't have an account?<a href="{{route('register')}}">  Sign Up</a>
+                            </div>
+                            <div class="text-left medium">
+                                <a href="{{ route('password.request') }}">Forgot your password?</a>
+                            </div>
+                       
+                                <!--  Don't have an account?<a href="{{route('register')}}">  Sign Up</a>
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif -->
+                                <br>
+                                
                             </div>
                         </div>
                     </form>

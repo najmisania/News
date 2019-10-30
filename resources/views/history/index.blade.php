@@ -1,52 +1,53 @@
 @include('navbar.head')
-<div class="header-top">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
-        <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
-          <a href="/">
-            <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
+        <div class="container">
+            <a href="/">
+                <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
+                        </div>
+                        <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
+                            <ul class="nav-menu-container navbar-nav ml-auto">
+                            <ul class="nav-menu">
+                                
+                                    <li><a style="color:white;" href="\upload">Upload News</a></li>
+                                </ul></ul>
+                        </div>
+                    </div>
+                </div>
+                </nav>
 <br>
 <br>
 <br>
 <br>
 <div class="col-lg-12">
   <div class="card">
-    <div class="card-header">
-      <h4 colspan="3" class="text-center">HISTORY BERITA</h4>
-    </div>
+    
     <div class="card-body">
       <div class="table-responsive">
         <div class="row">
           <div class="col-lg-12">
-            <div class="p-5">
+            <div class="p-2">
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4"></h1>
               </div>
+              <h4 colspan="3" class="text-center">HISTORY BERITA</h4>
               @include('layouts.alert')
-              <hr>
-              <a href="/upload" class="btn btn-success">Upload News</a>
+              
               <br><br>
               <form class="user" method="post" action="">
                 <table  class="table">
                   <tr>
-                    <th class=" text-center">NO</th>
-                    <th class=" text-center">Judul Berita</th>
+                    <th width="5%" class=" text-center">NO</th>
+                    <th width="15%" class=" text-center">Judul Berita</th>
 
-                    <th class=" text-center">Kategori Berita</th>
+                    <th width="15"class=" text-center">Kategori Berita</th>
 
-                    <th class=" text-center">Ringkasan Berita</th>
-                    <th class=" text-center">Tanggal</th>
+                    <th width="15"class=" text-center">Ringkasan Berita</th>
+                    <th width="15"class=" text-center">Tanggal</th>
 
-
-                    <th class=" text-center">Opsi</th>
-
+                    <th width="15"class=" text-center">Status</th>
+                    <th width="15" class="text-center">Opsi</th>
                   </tr>
                   @php
                   $no = 1;
@@ -54,16 +55,18 @@
                   @foreach ($berita as $brt)
                   <tr>
                     <td class=" text-center">{{ $no }}</td>
-                    <td class=" text-center">{{ $brt->judul }}</td>
+                    <td>{{ $brt->judul }}</td>
 
-                    <td class=" text-center">{{ $brt->kategori }}</td>
-                    <td class=" text-center">{{ $brt->ringkasan }}</td>
-                    <th class=" text-center">{{ $brt->created_at}}</th>
+                    <td>{{ $brt->kategori }}</td>
+                    <td>{{ $brt->ringkasan }}</td>
+                    <th>{{ $brt->created_at}}</th>
+                    <td></td>
 
 
                     <td class=" text-center">
                       <a href="/history/lihat/{{$brt->id}}" class=" btn btn-primary btn-sm">Lihat Berita</a>
-                      <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm">Edit</a>
+                      <br><br>
+                      <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm"><i class="fa fa-edit" aria-hidden="true"></a></i>
                       <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
                   </tr>

@@ -22,6 +22,7 @@ class CreateBeritasTable extends Migration
             $table->text('isi');
             $table->timestamps();
 
+
         });
     }
 

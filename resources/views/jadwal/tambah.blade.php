@@ -1,24 +1,20 @@
 @extends('navbar.head')
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
-        <div class="container">
-            <a href="/">
-                <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
-                        </div>
-                        <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
-                            <ul class="nav-menu-container navbar-nav ml-auto">
-                            <ul class="nav-menu">
-                                
-                                    <li><a style="color:white;" href="\history">History Berita</a></li>
-                                </ul></ul>
-                        </div>
-                    </div>
-                </div>
-                </nav>
+<div class="header-top">
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
+				<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
+					<a href="/">
+						<img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <br>
 <div class="container">
-	<h1 class="text-center">Upload Berita</h1>
+	<h1 class="text-center">Tambah Jadwal</h1>
 	<br>
 	<br>
 	<br>
@@ -28,9 +24,9 @@
 		{{csrf_field()}}
 
 		<div class="form-group row">
-			<label for="judul" class="col-sm-2 col-form-label">Judul Berita</label>
+			<label for="judul" class="col-sm-2 col-form-label">Nama Event</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" name="judul" id="judul" placeholder="">
+				<input type="text" class="form-control" name="nama_event" id="nama_event" placeholder="">
 			</div>
 		</div>
 		<div class="form-group row">
