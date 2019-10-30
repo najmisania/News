@@ -54,7 +54,7 @@ class BeritaController extends Controller
 		$this->validate($request, [
 			'judul',
 			'sub_judul',
-			'kategori'=> 'required',
+			'kategori',
 			'ringkasan',
 			'isi'
 		]);
