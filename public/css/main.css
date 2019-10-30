@@ -1646,6 +1646,7 @@ body {
 }
 
 .latest-post-area .latest-post-wrap {
+  width: 1138px;
   padding: 20px;
   background: #fff;
 }
@@ -1764,7 +1765,8 @@ body {
 /*-------- End latest-post Style -------------*/
 /*-------- Start popular-post Style -------------*/
 .popular-post-wrap {
-  padding: 20px;
+  width: 1138px;
+  padding: 50px;
   background: #fff;
 }
 

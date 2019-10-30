@@ -66,7 +66,7 @@ class BeritaController extends Controller
 		$berita->ringkasan = $request->ringkasan;
 		$berita->isi = $request->isi;
 		$berita->save();
-		return redirect('/history');
+		return redirect('history');
 	}
 
 	public function hapus($id)

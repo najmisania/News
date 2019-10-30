@@ -68,6 +68,6 @@
 <br>
 <br>
 <br>
-<br>
+<br> 
 @include('navbar.footer')
 @include('navbar.script')
