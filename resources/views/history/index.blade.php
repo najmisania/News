@@ -62,7 +62,7 @@
 
 
                     <td class=" text-center">
-                      <a href="" class=" btn btn-primary btn-sm">Lihat Berita</a>
+                      <a href="/history/lihat/{{$brt->id}}" class=" btn btn-primary btn-sm">Lihat Berita</a>
                       <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm">Edit</a>
                       <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>

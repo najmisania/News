@@ -16,7 +16,10 @@ class HomeController extends Controller
     public function index()
     {
         $berita = DB::table('berita')->get();
+        //dd($berita);
         return view('welcome', ['berita' => $berita]);
     }
+   
+  
    
 }

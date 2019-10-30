@@ -69,6 +69,13 @@ class BeritaController extends Controller
 		return redirect('history')->with('status', 'Berita berhasil di update.');
 	}
 
+	public function lihat_berita($id)
+	{
+		$berita = Berita::find($id);
+		// dd($berita);
+		return view('history.lihat', ['berita' => $berita]);
+	}
+
 	public function hapus($id)
 	{
 		$berita = Berita::find($id);
