@@ -41,8 +41,8 @@
 			<label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
 			<div class="col-3">
 				<select name="kategori" class="form-control" id="kategori" style="width: 195px">
-				<option value="DTS" @if($berita->berita == 'DTS') selected value="{{ $berita->kategori }}">{{ $berita->kategori }} @endif>DTS</option>
-				<option value="NON-DTS" @if($berita->berita == 'NON-DTS') selected value="{{ $berita->kategori }}">{{ $berita->kategori }} @endif>NON-DTS</option>
+				<option @if($berita->kategori == 'DTS') selected value="{{ $berita->kategori }}"@endif>DTS</option>
+				<option @if($berita->kategori == 'NON-DTS') selected value="{{ $berita->kategori }}" @endif>NON-DTS</option>
 			</select>
 			</div>
 		</div>
