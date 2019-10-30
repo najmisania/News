@@ -14,7 +14,7 @@ class BeritaController extends Controller
 		$berita = DB::table('berita')->get();
 
     	// mengirim data berita ke view index
-    	return view('history.index',['berita'=> $berita]); 
+    	return view('history.index',['berita'=> $berita]);
 	}
 
 	public function tambah()
@@ -52,11 +52,11 @@ class BeritaController extends Controller
 	public function update($id, Request $request)
 	{
 		$this->validate($request, [
-			'judul' => 'required',
-			'sub_judul' => 'required',
-			'kategori' => 'required',
-			'ringkasan' => 'required',
-			'isi' => 'required',
+			'judul',
+			'sub_judul',
+			'kategori'=> 'required',
+			'ringkasan',
+			'isi'
 		]);
 
 		$berita = Berita::find($id);
