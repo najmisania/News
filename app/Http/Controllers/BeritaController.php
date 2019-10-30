@@ -40,13 +40,13 @@ class BeritaController extends Controller
 
 		]);
 		// alihkan halaman ke halaman history
-		return redirect('/history');
+		return redirect('history')->with('status', 'Berita berhasil ditambahkan.');
 	}
 
 	public function edit($id)
 	{
 		$berita = Berita::find($id);
-		return view('Upload.edit', ['berita' => $berita]);
+		return view('upload.edit', ['berita' => $berita]);
 	}
 
 	public function update($id, Request $request)
@@ -66,7 +66,7 @@ class BeritaController extends Controller
 		$berita->ringkasan = $request->ringkasan;
 		$berita->isi = $request->isi;
 		$berita->save();
-		return redirect('/history');
+		return redirect('history')->with('status', 'Berita berhasil di update.');
 	}
 
 	public function hapus($id)
