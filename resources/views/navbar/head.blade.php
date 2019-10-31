@@ -19,7 +19,8 @@
         <!--
         CSS
         ============================================= -->
-        <link rel="stylesheet" href="{{asset('css/linearicons.css')}}">
+ 
+        <link rel="stylesheet" href="{{asset('css/linearicons.css')}}">         
         <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('css/custom.css')}}">
@@ -32,13 +33,8 @@
       
 
         <!-- Data Tables -->
-        <link href="{{asset('css/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
-        <!--Common Plugins CSS -->
-        <link href="{{asset('css/plugins.css')}}" rel="stylesheet">
-        <!--fonts-->
-        <link href="{{asset('css/line-icons.css')}}" rel="stylesheet">
-        <link href="{{asset('css/fontawesome-all.min.css')}}" rel="stylesheet">
+          <!--fonts-->                
         <link href="{{asset('css/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/responsive.bootstrap4.min.css')}}" rel="stylesheet">
-        <link href="{{asset('css/style.css')}}" rel="stylesheet">
+       
     </head>

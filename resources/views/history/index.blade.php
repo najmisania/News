@@ -41,13 +41,13 @@
                     <th width="5%" class=" text-center">NO</th>
                     <th width="15%" class=" text-center">Judul Berita</th>
 
-                    <th width="15"class=" text-center">Kategori Berita</th>
+                    <th width="10"class=" text-center">Kategori Berita</th>
 
-                    <th width="15"class=" text-center">Ringkasan Berita</th>
-                    <th width="15"class=" text-center">Tanggal</th>
+                    
+                    <th width="10"class=" text-center">Tanggal</th>
 
-                    <th width="15"class=" text-center">Status</th>
-                    <th width="15" class="text-center">Opsi</th>
+                    <th width="10"class=" text-center">Status</th>
+                    <th width="1" class="text-center">Aksi</th>
                   </tr>
                   @php
                   $no = 1;
@@ -57,15 +57,15 @@
                     <td class=" text-center">{{ $no }}</td>
                     <td>{{ $brt->judul }}</td>
 
-                    <td>{{ $brt->kategori }}</td>
-                    <td>{{ $brt->ringkasan }}</td>
-                    <th>{{ $brt->created_at}}</th>
+                    <td class=" text-center">{{ $brt->kategori }}</td>
+                    
+                    <th class=" text-center">{{ $brt->created_at}}</th>
                     <td></td>
 
 
                     <td class=" text-center">
                       <a href="/history/lihat/{{$brt->id}}" class=" btn btn-primary btn-sm">Lihat Berita</a>
-                      <br><br>
+                      
                       <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm"><i class="fa fa-edit" aria-hidden="true"></a></i>
                       <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
