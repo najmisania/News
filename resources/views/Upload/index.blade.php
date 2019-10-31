@@ -9,7 +9,7 @@
                         <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
                             <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
-                                
+
                                     <li><a style="color:white;" href="\history">History Berita</a></li>
                                 </ul></ul>
                         </div>

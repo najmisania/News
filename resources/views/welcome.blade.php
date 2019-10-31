@@ -23,8 +23,8 @@
                     <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
                         <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
-                             
-                             
+
+
                              <li class="menu-has-children"><a style="color:white;" href="#">Kategori Berita</a>
                                 <ul class="nav-menu">
                                     <li><a style="color:black;" href="standard-post.html">DTS</a></li>
@@ -35,7 +35,7 @@
                                 <li><a style="color:white;" href="\history">History Berita</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal">About</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal1">Contact</a></li>
-                                <li><a style="color:white;" href="\jadwal">Jadwal</a></li>
+                                <li><a style="color:white;" href="#">Jadwal</a></li>
                             </ul>
                         </ul>
                         </div>
@@ -137,7 +137,7 @@
     </section>
     <!-- End top-post Area -->
     <!-- Start latest-post Area -->
-    
+
     <section class="latest-post-area pb-120">
         <div class="container no-padding">
             <div class="row">
@@ -147,7 +147,7 @@
                         <h4 class="cat-title">Latest News</h4>
                          @foreach($berita as $brt)
                         <div class="single-latest-post row align-items-center">
-                           
+
                             <div class="col-lg-5 post-left">
                                 <div class="feature-img relative">
                                     <div class="overlay overlay-bg"></div>
@@ -176,7 +176,7 @@
                     <!-- End latest-post Area -->
 
                     <!-- Start banner-ads Area -->
-                    
+
                     <!-- End banner-ads Area -->
                     <!-- Start popular-post Area -->
                     <div class="popular-post-wrap mt-30">
@@ -254,9 +254,9 @@
                         </div>
                     </div>
                     <!-- End popular-post Area -->
-                   
+
                 </div>
-               
+
             </div>
         </div>
     </div>

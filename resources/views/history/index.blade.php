@@ -16,7 +16,7 @@
   </div>
 </nav>
 
-<div class="col-lg-12"> 
+<div class="col-lg-12   ">
   <div class="card">
     <div class="card-body">
       <div class="table-responsive">
@@ -63,9 +63,8 @@
                       <a href="/history/lihat/{{$brt->id}}" class=" btn btn-primary btn-sm">Lihat Berita</a>
 
                       <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm"><i class="fa fa-edit" aria-hidden="true"></i></a>
-                      {{-- <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a> --}}
-                      <a href="" class=" btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                      @include('layouts.confirm')
+                      <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm" onClick="return confirm('Yakin nih mau dihapus?')"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    
                     </td>
                   </tr>
                   @php
