@@ -23,6 +23,6 @@ Route::group(['prefix' => 'admin'], function(){
 	Route::post('/login', 'AuthAdmin\LoginController@login')->name('admin.login.submit');
 	Route::get('/', 'AdminController@index')->name('admin.home');
 
-
+Route::get('/jadwal',  'JadwalController@index');
 
 });

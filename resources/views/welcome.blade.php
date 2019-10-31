@@ -35,7 +35,7 @@
                                 <li><a style="color:white;" href="\history">History Berita</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal">About</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal1">Contact</a></li>
-                                <li><a style="color:white;" href="#">Jadwal</a></li>
+                                <li><a style="color:white;" href="\jadwal">Jadwal</a></li>
                             </ul>
                         </ul>
                         </div>
