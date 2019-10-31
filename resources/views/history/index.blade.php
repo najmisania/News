@@ -63,7 +63,9 @@
                       <a href="/history/lihat/{{$brt->id}}" class=" btn btn-primary btn-sm">Lihat Berita</a>
 
                       <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm"><i class="fa fa-edit" aria-hidden="true"></i></a>
-                      <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                      {{-- <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a> --}}
+                      <a href="" class=" btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteConfirm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                      @include('layouts.confirm')
                     </td>
                   </tr>
                   @php
@@ -82,3 +84,4 @@
 </div>
 
 @include('navbar.footer')
+@include('navbar.script')
