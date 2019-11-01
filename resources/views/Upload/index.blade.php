@@ -1,25 +1,24 @@
 @extends('navbar.head')
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
-        <div class="container">
-            <a href="/">
-                <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
-                        </div>
-                        <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
-                            <ul class="nav-menu-container navbar-nav ml-auto">
-                            <ul class="nav-menu">
-
-                                    <li><a style="color:white;" href="\history">History Berita</a></li>
-                                </ul></ul>
-                        </div>
-                    </div>
-                </div>
-                </nav>
+	<div class="container">
+		<a href="/"><img class="imgcustom" src="{{asset('img/logodts2.png')}}" alt=""></a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
+			</div>
+			<div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
+				<ul class="nav-menu-container navbar-nav ml-auto">
+					<ul class="nav-menu">
+						<li><a style="color:white;" href="\history">History Berita</a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
 <br>
 <div class="container">
-	<h1 class="text-center">Upload Berita</h1>
 	<br>
+	<h3 class="text-center">Upload Berita</h3>
 	<br>
 	<br>
 	<br>
@@ -44,13 +43,12 @@
 			<label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
 			<div class="col-3">
 				<select name="kategori" class="form-control" id="kategori" style="width: 195px">
-				<option selected disabled>-- Pilih Kategori --</option>
-				<option value="DTS">DTS</option>
-				<option value="NON-DTS">NON-DTS</option>
-			</select>
+					<option selected disabled>-- Pilih Kategori --</option>
+					<option value="DTS">DTS</option>
+					<option value="NON-DTS">NON-DTS</option>
+				</select>
 			</div>
 		</div>
-
 
 		<div class="form-group row">
 			<label for="ringkasan" class="col-sm-2 col-form-label">Ringkasan Berita</label>
