@@ -151,20 +151,20 @@
                             <div class="col-lg-5 post-left">
                                 <div class="feature-img relative">
                                     <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
+                                    <a href="/history/lihat/{{$brt->id}}"><img class="img-fluid" src="{{asset('img/dts1.png')}}" alt=""></a>
                                 </div>
                                 <ul class="tags">
                                     <li><a href="/history">{{$brt->kategori}}</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-7 post-right">
-                                <a href="image-post.html">
+                                <a href="/history/lihat/{{$brt->id}}">
                                     <h4>{{$brt->judul}}</h4>
                                 </a>
                                 <ul class="meta">
-                                    <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+                                    {{-- <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li> --}}
                                     <li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$brt->created_at}}</a></li>
-                                    <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+                                    {{-- <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li> --}}
                                 </ul>
                                 <p class="excert">
                                     {{$brt->ringkasan}}

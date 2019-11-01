@@ -1,7 +1,7 @@
 @include('navbar.head')
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
     <div class="container">
-        <a href="/"><img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
+        <a href="/"><img class="imgcustom" src="{{asset('img/logodts2.png')}}" alt=""></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
             </div>
