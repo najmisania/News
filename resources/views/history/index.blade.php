@@ -51,7 +51,7 @@
 
                   <td class=" text-center">{{ $brt->kategori }}</td>
 
-                  <th class=" text-center">{{ $brt->created_at}}</th>
+                  <th class=" text-center">{{ date('d F Y', strtotime($brt->created_at)) }}</th>
                   <td></td>
 
                   <td class=" text-center">

@@ -163,7 +163,7 @@
                                 </a>
                                 <ul class="meta">
                                     {{-- <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li> --}}
-                                    <li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$brt->created_at}}</a></li>
+                                    <li><a href="#"><span class="lnr lnr-calendar-full"></span>{{ date('d F Y', strtotime($brt->created_at)) }}</a></li>
                                     {{-- <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li> --}}
                                 </ul>
                                 <p class="excert">
