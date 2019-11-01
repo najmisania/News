@@ -1,3 +1,7 @@
 .imgcustom{
 	height: 60px;
 }
+
+body{
+	overflow-x: hidden;
+}

@@ -1,4 +1,4 @@
-@extends('navbar.head')
+@include('navbar.head')
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
 	<div class="container">
 		<a href="/"><img class="imgcustom" src="{{asset('img/logodts2.png')}}" alt=""></a>
