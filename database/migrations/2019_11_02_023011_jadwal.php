@@ -16,7 +16,8 @@ class Jadwal extends Migration
          Schema::create('jadwal', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama_kegiatan');
-            $table->timestamp('created_at')->nullable();
+            $table->date('tanggal');
+            $table->time('jam');
             $table->string('lokasi');
             $table->text('reminder');
             $table->text('jenis_kegiatan');

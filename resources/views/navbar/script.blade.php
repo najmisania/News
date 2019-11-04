@@ -24,5 +24,8 @@
 <script type="text/javascript" src="{{asset('js/dataTables.responsive.min.js')}}"></script> 
 <script type="text/javascript" src="{{asset('js/responsive.bootstrap4.min.js')}}"></script> 
 <script src="{{asset('js/datatables-custom.js')}}"></script>
+
+<!-- Date Picker -->
+
 </body>
 </html>

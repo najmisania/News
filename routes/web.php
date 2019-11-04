@@ -8,7 +8,7 @@ Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('home');
 
 // CRUD Berita
-Route::get('/history', 'BeritaController@index');
+Route::get('/history', 'BeritaController@index'); 
 
 Route::get('/upload', 'BeritaController@tambah');
 Route::post('/upload/berita', 'BeritaController@store');
@@ -24,6 +24,6 @@ Route::group(['prefix' => 'admin'], function(){
 	Route::get('/', 'AdminController@index')->name('admin.home');
 
 });
-Route::get('/jadwal', function () {
-    return view('jadwal.index');
-});
+Route::get('/jadwal', 'JadwalController@index');
+Route::get('/tambah', 'JadwalController@tambah');
+Route::post('/tambah/jadwal', 'JadwalController@store');

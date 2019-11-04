@@ -55,11 +55,11 @@
                   <td></td>
 
                   <td class=" text-center">
-                    <a href="/history/lihat/{{$brt->id}}" class=" btn btn-primary btn-sm">Lihat Berita</a>
+                   
 
-                    <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm"><i class="fa fa-edit" aria-hidden="true"></i></a>
-                    <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm" onClick="return confirm('Yakin nih mau dihapus?')"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                    
+                    <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm">Edit</a>
+                    <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm" onClick="return confirm('Yakin nih mau dihapus?')">Hapus</a>
+                    <a href="#" class=" btn btn-secondary btn-sm">Undisplay</a>
                   </td>
                 </tr>
                 @php
