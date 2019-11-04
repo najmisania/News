@@ -31,17 +31,17 @@
 		<div class="form-group row">
 			<label for="nama_event" class="col-sm-2 col-form-label">Nama Event</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" name="nama_event" id="nama_event" placeholder="">
+				<input type="text" class="form-control" name="nama_kegiatan" id="nama_kegiatan" placeholder="">
 			</div>
 		</div>
 		<div class="form-group row">
 			<label for="tanggal" class="col-sm-2 col-form-label">Tanggal</label>
 			<div class="col-3">
-				<input type="text" name="tanggal" class="form-control" id="tanggal" placeholder="">
+				<input type="date" name="tanggal" class="form-control" id="tanggal" placeholder="">
 			</div>
 			<label for="jam" class="col-form-label">Jam</label>
 			<div class="col-3">
-				<input type="text" name="jam" class="form-control" id="jam" placeholder="">
+				<input type="time" name="jam" class="form-control" id="jam" placeholder="">
 			</div>
 		</div>
 

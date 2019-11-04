@@ -40,6 +40,6 @@ class JadwalController extends Controller
 			'jenis_kegiatan' => $request->jenis_kegiatan,
 		]);
 		// alihkan halaman ke halaman jadwal
-		return redirect('jadwal.index')->with('status', 'Event berhasil ditambahkan.');
+		return redirect('jadwal')->with('status', 'Event berhasil ditambahkan.');
 	}
 }

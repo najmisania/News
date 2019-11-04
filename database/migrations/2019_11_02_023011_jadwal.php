@@ -21,7 +21,7 @@ class Jadwal extends Migration
             $table->string('lokasi');
             $table->text('reminder');
             $table->text('jenis_kegiatan');
-            
+            $table->timestamps();
 
 
         });
@@ -34,6 +34,6 @@ class Jadwal extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('jadwal');
     }
 }
