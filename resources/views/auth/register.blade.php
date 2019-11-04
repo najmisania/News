@@ -1,17 +1,20 @@
 @extends('navbar.head')
-<div class="header-top">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
-                <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
-                <a href="/">
-                    <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt="">
-                </a>
-            </div>
-            </div>
-
-        </div>
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
+  <div class="container">
+    <a href="/"><img class="imgcustom" src="{{asset('img/logodts2.png')}}" alt=""></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
+      </div>
+      <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
+        <ul class="nav-menu-container navbar-nav ml-auto">
+          <ul class="nav-menu">
+            <li><a style="color:white;" href="{{url('/admin/login')}}">Login</a></li>
+          </ul>
+        </ul>
+      </div>
     </div>
+  </div>
+</nav>
 </div> <br><br><br>
 <div class="container">
     <div class="row justify-content-center">

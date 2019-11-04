@@ -1,5 +1,15 @@
 @extends('layouts.app')
-
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel header-top">
+        <div class="container">
+            <a href="/">
+                <img class="img-fluid" src="{{asset('img/logo-2.png')}}" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-lg-10 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-left no-padding">
+                        </div>
+                       
+                    </div>
+                </div>
+                </nav>
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

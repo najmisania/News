@@ -35,18 +35,18 @@
                                 <li><a style="color:white;" href="\history">History Berita</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal">About</a></li>
                                 <li><a style="color:white;" href="#" data-toggle="modal" data-target="#myModal1">Contact</a></li>
-                                <li><a style="color:white;" href="#">Jadwal</a></li>
+                                <li><a style="color:white;" href="\jadwal">Jadwal</a></li>
                             </ul>
                         </ul>
                         </div>
                         <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
                             <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
-                                <li class="menu-has-children"><a style="color:white;" href="#">Login</a>
-                                  <ul class="nav-menu">
+                                <li class="menu-has-children"><a style="color:white;" href="{{url('/admin/login')}}">Login</a>
+                                 <!--  <ul class="nav-menu">
                                         <li><a style="color:black;" href="{{url('/admin/login')}}">Admin</a></li>
                                         <li><a style="color:black;" href="{{url('/login')}}">User</a></li>
-                                    </ul></li>
+                                    </ul></li> -->
                                     <li class="nav-item"><a style="color: white;" class="nav-link" href="{{route('register')}}">Register</a></li>
                                 </ul></ul>
                         </div>
@@ -66,7 +66,7 @@
 @extends('contact')
 </div>
 </header>
-
+<br>
 <div class="site-main-container">
     <!-- Start top-post Area -->
     <section class="top-post-area pt-10">
@@ -179,80 +179,7 @@
 
                     <!-- End banner-ads Area -->
                     <!-- Start popular-post Area -->
-                    <div class="popular-post-wrap mt-30">
-                        <h4 class="title">Popular Posts</h4>
-                        <div class="feature-post relative">
-                            <div class="feature-img relative">
-                                <div class="overlay overlay-bg"></div>
-                                <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
-                            </div>
-                            <div class="details">
-                                <ul class="tags">
-                                    <li><a href="#">Food Habit</a></li>
-                                </ul>
-                                <a href="image-post.html">
-                                    <h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
-                                </a>
-                                <ul class="meta">
-                                    <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-                                    <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-                                    <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row mt-20 medium-gutters">
-                            <div class="col-lg-6 single-popular-post">
-                                <div class="feature-img-wrap relative">
-                                    <div class="feature-img relative">
-                                        <div class="overlay overlay-bg"></div>
-                                        <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
-                                    </div>
-                                    <ul class="tags">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                </div>
-                                <div class="details">
-                                    <a href="image-post.html">
-                                        <h4>A Discount Toner Cartridge Is
-                                        Better Than Ever.</h4>
-                                    </a>
-                                    <ul class="meta">
-                                        <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
-                                    </ul>
-                                    <p class="excert">
-                                        Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 single-popular-post">
-                                <div class="feature-img-wrap relative">
-                                    <div class="feature-img relative">
-                                        <div class="overlay overlay-bg"></div>
-                                        <img class="img-fluid" src="{{asset('img/dts1.png')}}" alt="">
-                                    </div>
-                                    <ul class="tags">
-                                        <li><a href="#">Travel</a></li>
-                                    </ul>
-                                </div>
-                                <div class="details">
-                                    <a href="image-post.html">
-                                        <h4>A Discount Toner Cartridge Is
-                                        Better Than Ever.</h4>
-                                    </a>
-                                    <ul class="meta">
-                                        <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-                                        <li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-                                        <li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
-                                    </ul>
-                                    <p class="excert">
-                                        Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <!-- End popular-post Area -->
 
                 </div>

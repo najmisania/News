@@ -425,6 +425,7 @@ class ComposerStaticInitdd595a4021e76899f179edc55e258ba4
         'App\\Http\\Controllers\\BeritaController' => __DIR__ . '/../..' . '/app/Http/Controllers/BeritaController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\JadwalController' => __DIR__ . '/../..' . '/app/Http/Controllers/JadwalController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
