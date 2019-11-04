@@ -46,12 +46,12 @@
                 @foreach ($jadwal as $jdl)
                 <tr>
                     <td class="text-center">{{ $no }}</td>
-                    <td>{{$jdl->nama_kegiatan}}</td>
+                    <td class="text-center">{{$jdl->nama_kegiatan}}</td>
                     <td class="text-center">{{$jdl->tanggal}}</td>
                     <td class="text-center">{{$jdl->jam}}</td>
-                    <td>{{$jdl->lokasi}}</td>
-                    <td>{{$jdl->reminder}}</td>
-                    <td>{{$jdl->jenis_kegiatan}}</td>
+                    <td class="text-center">{{$jdl->lokasi}}</td>
+                    <td class="text-center">{{$jdl->reminder}}</td>
+                    <td class="text-center">{{$jdl->jenis_kegiatan}}</td>
 
                     <td class=" text-center">
                       <a href="#" class=" btn btn-primary btn-sm">Daftar Jadwal</a></td>
