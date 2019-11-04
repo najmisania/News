@@ -20,8 +20,8 @@
 <br>
 <br>
 
-
-<h2 class="pl-3 pr-3 text-capitalize font400 mb-20 text-center">Daftar Event</h2>
+@include('layouts.alert')
+<h3 class="pl-3 pr-3 text-capitalize font400 mb-20 text-center">Daftar Event</h3>
 <div class="page-content">
     <div class="container-fluid">
       <div class="bg-white table-responsive rounded shadow-sm pt-3 pb-3 mb-30">
@@ -56,7 +56,7 @@
                     <td class=" text-center">
                       <a href="#" class=" btn btn-primary btn-sm">Daftar Jadwal</a></td>
                   </tr>
-                   @php
+                @php
                 $no++;
                 @endphp
                 @endforeach
