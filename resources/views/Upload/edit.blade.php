@@ -66,8 +66,8 @@
       <label for="status" class="col-sm-2 col-form-label">Status</label>
       <div class="col-3">
       <select class="form-control" name="status">
-        <option value="0">Enable</option>
-        <option value="1" selected="selected">Disable</option>
+        <option value="1">Enable</option>
+        <option value="0">Disable</option>
       </select>
       </div>
 
