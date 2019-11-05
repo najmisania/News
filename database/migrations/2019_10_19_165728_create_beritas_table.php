@@ -20,6 +20,7 @@ class CreateBeritasTable extends Migration
             $table->string('kategori');
             $table->text('ringkasan');
             $table->text('isi');
+            $table->string('status')->nullable();
             $table->timestamps();
 
 

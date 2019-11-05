@@ -9,7 +9,7 @@
                         <div class="col-lg-9 align-items-center justify-content-between col-md-6 col-sm-6 col-6 header-top-right">
                             <ul class="nav-menu-container navbar-nav ml-auto">
                             <ul class="nav-menu">
-                                
+
                                     <li><a style="color:white;" href="\history">History Berita</a></li>
                                 </ul></ul>
                         </div>
@@ -62,7 +62,17 @@
 			<label for="isi">Isi Berita</label>
 			<textarea class="form-control" name="isi" id="isi" rows="7">{{ $berita->isi }}</textarea>
 		</div>
-		<button type="submit" class="btn btn-primary">Simpan</button>
+    <div class="form-group row">
+      <label for="status" class="col-sm-2 col-form-label">Status</label>
+      <div class="col-3">
+      <select class="form-control" name="status">
+        <option value="0">Enable</option>
+        <option value="1" selected="selected">Disable</option>
+      </select>
+      </div>
+
+    </div>
+		<button type="submit" class="btn btn-primary">Update History</button>
 	</form>
 </div>
 
@@ -71,6 +81,6 @@
 <br>
 <br>
 <br>
-<br> 
+<br>
 @include('navbar.footer')
 @include('navbar.script')

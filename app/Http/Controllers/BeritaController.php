@@ -56,7 +56,8 @@ class BeritaController extends Controller
 			'sub_judul',
 			'kategori',
 			'ringkasan',
-			'isi'
+			'isi',
+			'status'
 		]);
 
 		$berita = Berita::find($id);
@@ -65,6 +66,7 @@ class BeritaController extends Controller
 		$berita->kategori = $request->kategori;
 		$berita->ringkasan = $request->ringkasan;
 		$berita->isi = $request->isi;
+		$berita->status = $request->status;
 		$berita->save();
 		return redirect('history')->with('status', 'Berita berhasil di update.');
 	}
