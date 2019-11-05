@@ -53,12 +53,12 @@
 
                   <td class=" text-center">{{ date('d F Y', strtotime($brt->created_at)) }}</td>
                   <td class="text-center">
-                    @if($brt->status=='tampil')
+                    @if($brt->status=='Enable')
                     <button type="button" class="btn-success" name="status">{{ $brt->status }}</button>
-                    @elseif($brt->status=='tidak tampil')
+                    @elseif($brt->status=='Disable')
                       <button type="button" class="btn-danger" name="status">{{ $brt->status }}</button>
                       @else
-                      
+
                       @endif
                   </td>
 

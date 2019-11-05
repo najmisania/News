@@ -145,7 +145,7 @@
                     <div class="latest-post-wrap">
                         <h4 class="cat-title">Latest News</h4>
                          @foreach($berita as $brt)
-                         @if($brt->status=='tampil')
+                         @if($brt->status=='Enable')
                         <div class="single-latest-post row align-items-center">
 
                             <div class="col-lg-5 post-left">
