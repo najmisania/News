@@ -16,14 +16,15 @@
 <script src="{{asset('js/main.js')}}"></script>
 <!-- Data Tables -->
  <!-- Common plugins -->
-<script type="text/javascript" src="{{asset('js/plugins.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/appUi-custom.js')}}"></script> 
+<script type="text/javascript" src="{{asset('js/plugins.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/appUi-custom.js')}}"></script>
         <!-- Required datatable js -->
-<script type="text/javascript" src="{{asset('js/jquery.dataTables.min.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/dataTables.responsive.min.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/responsive.bootstrap4.min.js')}}"></script> 
+<script type="text/javascript" src="{{asset('js/jquery.dataTables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/dataTables.responsive.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/responsive.bootstrap4.min.js')}}"></script>
 <script src="{{asset('js/datatables-custom.js')}}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <!-- Date Picker -->
 

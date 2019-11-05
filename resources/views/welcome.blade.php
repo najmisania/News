@@ -137,7 +137,6 @@
     </section>
     <!-- End top-post Area -->
     <!-- Start latest-post Area -->
-
     <section class="latest-post-area pb-120">
         <div class="container no-padding">
             <div class="row">
@@ -146,6 +145,7 @@
                     <div class="latest-post-wrap">
                         <h4 class="cat-title">Latest News</h4>
                          @foreach($berita as $brt)
+                         @if($brt->status=='tampil')
                         <div class="single-latest-post row align-items-center">
 
                             <div class="col-lg-5 post-left">
@@ -171,6 +171,9 @@
                                 </p>
                             </div>
                         </div>
+
+                        @endif
+
                         @endforeach
                     </div>
                     <!-- End latest-post Area -->
@@ -179,7 +182,7 @@
 
                     <!-- End banner-ads Area -->
                     <!-- Start popular-post Area -->
-                   
+
                     <!-- End popular-post Area -->
 
                 </div>
@@ -189,6 +192,8 @@
     </div>
 </div></div>
 </section>
+
+
 <!-- End latest-post Area -->
 @include('navbar.footer')
 @include('navbar.script')

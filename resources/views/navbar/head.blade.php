@@ -19,8 +19,8 @@
         <!--
         CSS
         ============================================= -->
- 
-        <link rel="stylesheet" href="{{asset('css/linearicons.css')}}">         
+
+        <link rel="stylesheet" href="{{asset('css/linearicons.css')}}">
         <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('css/custom.css')}}">
@@ -32,13 +32,15 @@
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
       
 
+
+
         <!-- Data Tables -->
-          <!--fonts-->                
+          <!--fonts-->
         <link href="{{asset('css/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/responsive.bootstrap4.min.css')}}" rel="stylesheet">
-       
+
        <!-- Date Picker -->
-      
+
 
 
     </head>

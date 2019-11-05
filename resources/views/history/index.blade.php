@@ -52,13 +52,21 @@
                   <td class=" text-center">{{ $brt->kategori }}</td>
 
                   <td class=" text-center">{{ date('d F Y', strtotime($brt->created_at)) }}</td>
-                  <td class="text-center"> {{ $brt->status }}</td>
+                  <td class="text-center">
+                    @if($brt->status=='tampil')
+                    <button type="button" class="btn-success" name="status">{{ $brt->status }}</button>
+                    @elseif($brt->status=='tidak tampil')
+                      <button type="button" class="btn-danger" name="status">{{ $brt->status }}</button>
+                      @else
+                      
+                      @endif
+                  </td>
 
                   <td class=" text-center">
 
                     <a href="/history/edit/{{ $brt->id }}" class=" btn btn-warning btn-sm">Edit</a>
                     <a href="/history/hapus/{{ $brt->id }}" class=" btn btn-danger btn-sm" onClick="return confirm('Yakin nih mau dihapus?')">Hapus</a>
-                    <a href="#" class=" btn btn-secondary btn-sm">Undisplay</a>
+
                   </td>
                 </tr>
                 @php
