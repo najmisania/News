@@ -66,8 +66,8 @@
       <label for="status" class="col-sm-2 col-form-label">Status</label>
       <div class="col-3">
       <select class="form-control" name="status">
-        <option value="1">Enable</option>
-        <option value="0">Disable</option>
+        <option @if($berita->status == "1") selected value="{{ $berita->status }}"@endif>Enable</option>
+        <option @if($berita->status == "0") selected value="{{ $berita->status }}"@endif>Disable</option>
       </select>
       </div>
 
